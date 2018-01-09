@@ -1,4 +1,4 @@
-<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US"><head><meta charset="utf-8"><meta name="generator" content="ReSpec 18.3.0"><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"><style>/* --- ISSUES/NOTES --- */
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US"><head><meta charset="utf-8"><meta name="generator" content="ReSpec 19.0.1"><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"><style>/* --- ISSUES/NOTES --- */
 div.issue-title, div.note-title , div.ednote-title, div.warning-title {
     padding-right:  1em;
     min-width: 7.5em;
@@ -45,7 +45,7 @@ span.note, span.ednote, span.issue, span.warning { padding: .1em .5em .15em; }
 }
 
 .warning-title:before{
-    content: "âš "; /*U+26A0 WARNING SIGN*/
+    content: "⚠"; /*U+26A0 WARNING SIGN*/
     font-size: 3em;
     float: left;
     height: 100%;
@@ -88,36 +88,6 @@ input.task-list-item-checkbox {
 <title>SVG Accessibility API Mappings</title>
 <script src="https://www.w3.org/scripts/jquery/1.11/jquery.min.js"></script>
 
-
-	
-
-<link href="common/css/mapping-tables.css" rel="stylesheet" type="text/css">
-<link href="common/css/common.css" rel="stylesheet" type="text/css">
-<!--<link href="css/svg-aam.css" rel="stylesheet" type="text/css"/>-->
-
-
-<script src="common/script/jquery.details.min.js"></script>
-<script src="common/script/mapping-tables.js"></script>
-<script type="text/javascript">
-
-var mappingTableLabels = {
-  viewByTable: "View as a single table",
-  expand: "Expand all",
-  collapse: "Collapse all",
-  showHideCols: "Show/Hide Columns:",
-  showActionText: "Show",
-  hideActionText: "Hide",
-  showToolTipText: "Show column",
-  hideToolTipText: "Hide column",
-
-  // map where keys are @id of associated mapping table:
-  viewByLabels: {
-    "role-mapping-table": "View by elements",
-    "state-property-mapping-table": "View by state/property",
-    "event-mapping-table": "View by state/property"
-  }
-}
-</script>
 <style id="respec-mainstyle">/*****************************************************************
  * ReSpec 3 CSS
  * Robin Berjon - http://berjon.com/
@@ -391,7 +361,37 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 .hljs-strong {
   font-weight: bold;
 }
-</style><link rel="stylesheet" href="https://www.w3.org/StyleSheets/TR/2016/W3C-ED"><link rel="canonical" href="https://www.w3.org/TR/svg-aam-1.0/"><script id="initialUserConfig" type="application/json">{
+</style>
+	
+
+<link href="common/css/mapping-tables.css" rel="stylesheet" type="text/css">
+<link href="common/css/common.css" rel="stylesheet" type="text/css">
+<!--<link href="css/svg-aam.css" rel="stylesheet" type="text/css"/>-->
+
+
+<script src="common/script/jquery.details.min.js"></script>
+<script src="common/script/mapping-tables.js"></script>
+<script type="text/javascript">
+
+var mappingTableLabels = {
+  viewByTable: "View as a single table",
+  expand: "Expand all",
+  collapse: "Collapse all",
+  showHideCols: "Show/Hide Columns:",
+  showActionText: "Show",
+  hideActionText: "Hide",
+  showToolTipText: "Show column",
+  hideToolTipText: "Hide column",
+
+  // map where keys are @id of associated mapping table:
+  viewByLabels: {
+    "role-mapping-table": "View by elements",
+    "state-property-mapping-table": "View by state/property",
+    "event-mapping-table": "View by state/property"
+  }
+}
+</script>
+<link rel="stylesheet" href="https://www.w3.org/StyleSheets/TR/2016/W3C-ED"><link rel="canonical" href="https://www.w3.org/TR/svg-aam-1.0/"><script id="initialUserConfig" type="application/json">{
   "includePermalinks": true,
   "specStatus": "ED",
   "diffTool": "http://www.aptest.com/standards/htmldiff/htmldiff.pl",
@@ -662,7 +662,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
       "status": "REC",
       "publisher": "W3C",
       "authors": [
-        "Erik DahlstrÃ¶m",
+        "Erik Dahlström",
         "Patrick Dengler",
         "Anthony Grasso",
         "Chris Lilley",
@@ -670,7 +670,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
         "Doug Schepers",
         "Jonathan Watt",
         "John Ferraiolo",
-        "è—¤æ²¢ æ·³ (FUJISAWA Jun)",
+        "藤沢 淳 (FUJISAWA Jun)",
         "Dean Jackson"
       ],
       "etAl": true,
@@ -690,7 +690,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
         "Amelia Bellamy-Royds",
         "Brian Birtles",
         "Cyril Concolato",
-        "Erik DahlstrÃ¶m",
+        "Erik Dahlström",
         "Chris Lilley",
         "Cameron McCormack",
         "Doug Schepers",
@@ -747,22 +747,17 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
   "preProcess": [
     null
   ],
-  "publishISODate": "2017-11-21T00:00:00.000Z",
-  "generatedSubtitle": "Editor's Draft 21 November 2017"
-}</script><meta name="description" content="SVG Accessibility API Mappings (SVG-AAM) defines how 
-    user agents map 
-    Scalable Vector Graphics (SVG) [SVG] markup 
-    to platform accessibility 
-    application programming interfaces (APIs). 
-    It is intended for SVG user agent developers 
-    responsible for SVG accessibility in their user agent."></head>
-<body aria-busy="false" class="h-entry"><div class="head">
+  "publishDate": "2018-01-09",
+  "publishISODate": "2018-01-09T00:00:00.000Z",
+  "generatedSubtitle": "Editor's Draft 09 January 2018"
+}</script></head>
+<body aria-busy="false" class="h-entry toc-inline"><div class="head">
     <p>
-      <a class="logo" href="https://www.w3.org/"><img src="https://www.w3.org/StyleSheets/TR/2016/logos/W3C" alt="W3C" width="72" height="48"></a>
+      <a class="logo" href="https://www.w3.org/"><img width="72" height="48" src="https://www.w3.org/StyleSheets/TR/2016/logos/W3C" alt="W3C"></a>
     </p>
-  <p><!--_hyper: -234722164;--></p>
+  <p><!--_hyper: -1926161600;--></p>
   <h1 class="title p-name" id="title"><abbr title="Scalable Vector Graphics">SVG</abbr> Accessibility <abbr title="Application Programming Interfaces">API</abbr> Mappings</h1>
-  <h2 id="w3c-editor-s-draft-21-november-2017"><abbr title="World Wide Web Consortium">W3C</abbr> Editor's Draft <time class="dt-published" datetime="2017-11-21">21 November 2017</time>&nbsp;<span class="permalink"><a href="#undefined" aria-label="Permalink for W3C Editor's Draft 21 November 2017" title="Permalink for W3C Editor's Draft 21 November 2017"><span>Â§</span></a></span></h2>
+  <h2 id="w3c-editor-s-draft-09-january-2018"><abbr title="World Wide Web Consortium">W3C</abbr> Editor's Draft <time class="dt-published" datetime="2018-01-09">09 January 2018</time>&nbsp;<span class="permalink"><a href="#undefined" aria-label="Permalink for W3C Editor's Draft 09 January 2018" title="Permalink for W3C Editor's Draft 09 January 2018"><span>§</span></a></span></h2>
   <dl>
       <dt>This version:</dt>
       <dd><a class="u-url" href="https://w3c.github.io/aria/svg-aam/svg-aam.html">https://w3c.github.io/aria/svg-aam/svg-aam.html</a></dd>
@@ -782,7 +777,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
   </dl>
       <p class="copyright">
         <a href="https://www.w3.org/Consortium/Legal/ipr-notice#Copyright">Copyright</a> ©
-        2015-2017
+        2015-2018
         
         <a href="https://www.w3.org/"><abbr title="World Wide Web Consortium">W3C</abbr></a><sup>®</sup>
         (<a href="https://www.csail.mit.edu/"><abbr title="Massachusetts Institute of Technology">MIT</abbr></a>,
@@ -900,9 +895,9 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
           </p>
         
 
-</section><nav id="toc"><h2 class="introductory" id="table-of-contents">Table of Contents&nbsp;<span class="permalink"><a href="#undefined" aria-label="Permalink for Table of Contents" title="Permalink for Table of Contents"><span>Â§</span></a></span></h2><ol class="toc"><li class="tocline"><a href="#abstract" class="tocxref">Abstract</a></li><li class="tocline"><a href="#sotd" class="tocxref">Status of This Document</a></li><li class="tocline"><a href="#intro" class="tocxref"><span class="secno">1. </span>Introduction</a><ol class="toc"><li class="tocline"><a href="#intro_aapi" class="tocxref"><span class="secno">1.1 </span>Accessibility <abbr title="Application Programming Interfaces">APIs</abbr> </a></li><li class="tocline"><a href="#intro_treetypes" class="tocxref"><span class="secno">1.2 </span>The Accessibility Tree and the <abbr title="Document Object Model">DOM</abbr> Tree</a></li></ol></li><li class="tocline"><a href="#normative" class="tocxref"><span class="secno">2. </span>Normative User Agent Implementation Requirements for <abbr title="Scalable Vector Graphics">SVG</abbr></a></li><li class="tocline"><a href="#glossary" class="tocxref"><span class="secno">3. </span>Important Terms</a></li><li class="tocline"><a href="#keyboard-focus" class="tocxref"><span class="secno">4. </span>Supporting Keyboard Navigation</a></li><li class="tocline"><a href="#mapping" class="tocxref"><span class="secno">5. </span>Mapping <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> to Accessibility <abbr title="Application Programming Interfaces">APIs</abbr></a><ol class="toc"><li class="tocline"><a href="#mapping_general" class="tocxref"><span class="secno">5.1 </span>General rules for exposing <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> semantics</a><ol class="toc"><li class="tocline"><a href="#exclude_elements" class="tocxref"><span class="secno">5.1.1 </span>Excluding Elements from the Accessibility Tree</a></li><li class="tocline"><a href="#include_elements" class="tocxref"><span class="secno">5.1.2 </span>Including Elements in the Accessibility Tree</a></li></ol></li></ol></li><li class="tocline"><a href="#mapping_conflicts" class="tocxref"><span class="secno">6. </span>Conflicts between native markup semantics and <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr></a></li><li class="tocline"><a href="#mapping_nodirect" class="tocxref"><span class="secno">7. </span>Exposing attributes that do not directly map to accessibility <abbr title="application programming interface">API</abbr> properties</a></li><li class="tocline"><a href="#mapping_role" class="tocxref"><span class="secno">8. </span>Role mapping</a><ol class="toc"><li class="tocline"><a href="#roleMappingGeneralRules" class="tocxref"><span class="secno">8.1 </span>General Rules</a></li><li class="tocline"><a href="#mapping_role_table" class="tocxref"><span class="secno">8.2 </span><abbr title="Scalable Vector Graphics">SVG</abbr> Element Mapping Table</a></li></ol></li><li class="tocline"><a href="#mapping_state-property" class="tocxref"><span class="secno">9. </span>State and Property Mapping</a></li><li class="tocline"><a href="#mapping_additional" class="tocxref"><span class="secno">10. </span>Special Processing Requiring Additional Computation</a><ol class="toc"><li class="tocline"><a href="#mapping_additional_nd" class="tocxref"><span class="secno">10.1 </span>Name and Description</a></li><li class="tocline"><a href="#mapping_additional_widget-value" class="tocxref"><span class="secno">10.2 </span>Widget Values</a></li><li class="tocline"><a href="#mapping_additional_relations" class="tocxref"><span class="secno">10.3 </span>Relations</a></li><li class="tocline"><a href="#mapping_additional_position" class="tocxref"><span class="secno">10.4 </span>Group Position</a></li><li class="tocline"><a href="#mapping_use_shadow_tree" class="tocxref"><span class="secno">10.5 </span>Use-Element Shadow Trees</a></li><li class="tocline"><a href="#mapping_view" class="tocxref"><span class="secno">10.6 </span><abbr title="Scalable Vector Graphics">SVG</abbr> Views</a></li><li class="tocline"><a href="#mapping_animation" class="tocxref"><span class="secno">10.7 </span>Declarative Animation</a></li></ol></li><li class="tocline"><a href="#mapping_actions" class="tocxref"><span class="secno">11. </span>Actions</a></li><li class="tocline"><a href="#mapping_events" class="tocxref"><span class="secno">12. </span>Events</a></li><li class="tocline"><a href="#document-handling" class="tocxref"><span class="secno">13. </span>Special Document Handling Procedures</a></li><li class="tocline"><a href="#appendices" class="tocxref"><span class="secno">A. </span>Appendices</a><ol class="toc"><li class="tocline"><a href="#appendices_references" class="tocxref"><span class="secno">A.1 </span>References</a></li><li class="tocline"><a href="#acknowledgements" class="tocxref"><span class="secno">A.2 </span>Acknowledgments</a><ol class="toc"><li class="tocline"><a href="#ack_group" class="tocxref"><span class="secno">A.2.1 </span>Participants active in the <abbr title="Scalable Vector Graphics">SVG</abbr> Accessibility Task Force active at the time of publication</a></li><li class="tocline"><a href="#ack_funders" class="tocxref"><span class="secno">A.2.2 </span>Enabling funders</a></li></ol></li></ol></li><li class="tocline"><a href="#references" class="tocxref"><span class="secno">B. </span>References</a><ol class="toc"><li class="tocline"><a href="#normative-references" class="tocxref"><span class="secno">B.1 </span>Normative references</a></li><li class="tocline"><a href="#informative-references" class="tocxref"><span class="secno">B.2 </span>Informative references</a></li></ol></li></ol></nav>
+</section><nav id="toc"><h2 class="introductory" id="table-of-contents">Table of Contents&nbsp;<span class="permalink"><a href="#undefined" aria-label="Permalink for Table of Contents" title="Permalink for Table of Contents"><span>§</span></a></span></h2><ol class="toc"><li class="tocline"><a href="#abstract" class="tocxref">Abstract</a></li><li class="tocline"><a href="#sotd" class="tocxref">Status of This Document</a></li><li class="tocline"><a href="#intro" class="tocxref"><span class="secno">1. </span>Introduction</a><ol class="toc"><li class="tocline"><a href="#intro_aapi" class="tocxref"><span class="secno">1.1 </span>Accessibility <abbr title="Application Programming Interfaces">APIs</abbr> </a></li><li class="tocline"><a href="#intro_treetypes" class="tocxref"><span class="secno">1.2 </span>The Accessibility Tree and the <abbr title="Document Object Model">DOM</abbr> Tree</a></li></ol></li><li class="tocline"><a href="#normative" class="tocxref"><span class="secno">2. </span>Normative User Agent Implementation Requirements for <abbr title="Scalable Vector Graphics">SVG</abbr></a></li><li class="tocline"><a href="#glossary" class="tocxref"><span class="secno">3. </span>Important Terms</a></li><li class="tocline"><a href="#keyboard-focus" class="tocxref"><span class="secno">4. </span>Supporting Keyboard Navigation</a></li><li class="tocline"><a href="#mapping" class="tocxref"><span class="secno">5. </span>Mapping <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> to Accessibility <abbr title="Application Programming Interfaces">APIs</abbr></a><ol class="toc"><li class="tocline"><a href="#mapping_general" class="tocxref"><span class="secno">5.1 </span>General rules for exposing <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> semantics</a><ol class="toc"><li class="tocline"><a href="#exclude_elements" class="tocxref"><span class="secno">5.1.1 </span>Excluding Elements from the Accessibility Tree</a></li><li class="tocline"><a href="#include_elements" class="tocxref"><span class="secno">5.1.2 </span>Including Elements in the Accessibility Tree</a></li></ol></li></ol></li><li class="tocline"><a href="#mapping_conflicts" class="tocxref"><span class="secno">6. </span>Conflicts between native markup semantics and <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr></a></li><li class="tocline"><a href="#mapping_nodirect" class="tocxref"><span class="secno">7. </span>Exposing attributes that do not directly map to accessibility <abbr title="application programming interface">API</abbr> properties</a></li><li class="tocline"><a href="#mapping_role" class="tocxref"><span class="secno">8. </span>Role mapping</a><ol class="toc"><li class="tocline"><a href="#roleMappingGeneralRules" class="tocxref"><span class="secno">8.1 </span>General Rules</a></li><li class="tocline"><a href="#mapping_role_table" class="tocxref"><span class="secno">8.2 </span><abbr title="Scalable Vector Graphics">SVG</abbr> Element Mapping Table</a></li></ol></li><li class="tocline"><a href="#mapping_state-property" class="tocxref"><span class="secno">9. </span>State and Property Mapping</a></li><li class="tocline"><a href="#mapping_additional" class="tocxref"><span class="secno">10. </span>Special Processing Requiring Additional Computation</a><ol class="toc"><li class="tocline"><a href="#mapping_additional_nd" class="tocxref"><span class="secno">10.1 </span>Name and Description</a></li><li class="tocline"><a href="#mapping_additional_widget-value" class="tocxref"><span class="secno">10.2 </span>Widget Values</a></li><li class="tocline"><a href="#mapping_additional_relations" class="tocxref"><span class="secno">10.3 </span>Relations</a></li><li class="tocline"><a href="#mapping_additional_position" class="tocxref"><span class="secno">10.4 </span>Group Position</a></li><li class="tocline"><a href="#mapping_use_shadow_tree" class="tocxref"><span class="secno">10.5 </span>Use-Element Shadow Trees</a></li><li class="tocline"><a href="#mapping_view" class="tocxref"><span class="secno">10.6 </span><abbr title="Scalable Vector Graphics">SVG</abbr> Views</a></li><li class="tocline"><a href="#mapping_animation" class="tocxref"><span class="secno">10.7 </span>Declarative Animation</a></li></ol></li><li class="tocline"><a href="#mapping_actions" class="tocxref"><span class="secno">11. </span>Actions</a></li><li class="tocline"><a href="#mapping_events" class="tocxref"><span class="secno">12. </span>Events</a></li><li class="tocline"><a href="#document-handling" class="tocxref"><span class="secno">13. </span>Special Document Handling Procedures</a></li><li class="tocline"><a href="#appendices" class="tocxref"><span class="secno">A. </span>Appendices</a><ol class="toc"><li class="tocline"><a href="#appendices_references" class="tocxref"><span class="secno">A.1 </span>References</a></li><li class="tocline"><a href="#acknowledgements" class="tocxref"><span class="secno">A.2 </span>Acknowledgments</a><ol class="toc"><li class="tocline"><a href="#ack_group" class="tocxref"><span class="secno">A.2.1 </span>Participants active in the <abbr title="Scalable Vector Graphics">SVG</abbr> Accessibility Task Force active at the time of publication</a></li><li class="tocline"><a href="#ack_funders" class="tocxref"><span class="secno">A.2.2 </span>Enabling funders</a></li></ol></li></ol></li><li class="tocline"><a href="#references" class="tocxref"><span class="secno">B. </span>References</a><ol class="toc"><li class="tocline"><a href="#normative-references" class="tocxref"><span class="secno">B.1 </span>Normative references</a></li><li class="tocline"><a href="#informative-references" class="tocxref"><span class="secno">B.2 </span>Informative references</a></li></ol></li></ol></nav>
 <section id="intro" class="informative">
-	<!--OddPage--><h2 id="x1-introduction"><span class="secno">1. </span>Introduction&nbsp;<span class="permalink"><a href="#intro" aria-label="Permalink for 1. Introduction" title="Permalink for 1. Introduction"><span>Â§</span></a></span></h2><p><em>This section is non-normative.</em></p>
+	<!--OddPage--><h2 id="x1-introduction"><span class="secno">1. </span>Introduction&nbsp;<span class="permalink"><a href="#intro" aria-label="Permalink for 1. Introduction" title="Permalink for 1. Introduction"><span>§</span></a></span></h2><p><em>This section is non-normative.</em></p>
   <p>
     In traditional Graphical User Interface (<abbr title="graphical user interface">GUI</abbr>) applications, 
     components of the User Interface (<abbr title="user interface">UI</abbr>) are 
@@ -1068,7 +1063,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
     </li>
   </ul>
 	<section id="intro_aapi">
-		<h3 id="x1-1-accessibility-apis"><span class="secno">1.1 </span>Accessibility <abbr title="Application Programming Interfaces">APIs</abbr> &nbsp;<span class="permalink"><a href="#intro_aapi" aria-label="Permalink for 1.1 Accessibility APIs " title="Permalink for 1.1 Accessibility APIs "><span>Â§</span></a></span></h3>
+		<h3 id="x1-1-accessibility-apis"><span class="secno">1.1 </span>Accessibility <abbr title="Application Programming Interfaces">APIs</abbr> &nbsp;<span class="permalink"><a href="#intro_aapi" aria-label="Permalink for 1.1 Accessibility APIs " title="Permalink for 1.1 Accessibility APIs "><span>§</span></a></span></h3>
     <p>
       To provide access to <abbr title="graphical user interface">GUI</abbr> applications,
       software applications expose the necessary information needed by <a class="termref internalDFN" data-lt="element" href="#dfn-element" data-link-type="dfn">assistive technologies</a> to interoperate with it through <a class="termref internalDFN" href="#dfn-accessibility-api" data-link-type="dfn">accessibility <abbr title="Application Programming Interfaces">API</abbr></a>s. The accessibility information exposed through the <a class="termref internalDFN" href="#dfn-accessibility-api" data-link-type="dfn">accessibility <abbr title="Application Programming Interfaces">API</abbr></a>s must be maintained throughout the applications lifecycle.
@@ -1132,7 +1127,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
     </p>
 	</section>
 	<section id="intro_treetypes">
-		<h3 id="x1-2-the-accessibility-tree-and-the-dom-tree"><span class="secno">1.2 </span>The Accessibility Tree and the <abbr title="Document Object Model">DOM</abbr> Tree&nbsp;<span class="permalink"><a href="#intro_treetypes" aria-label="Permalink for 1.2 The Accessibility Tree and the DOM Tree" title="Permalink for 1.2 The Accessibility Tree and the DOM Tree"><span>Â§</span></a></span></h3>
+		<h3 id="x1-2-the-accessibility-tree-and-the-dom-tree"><span class="secno">1.2 </span>The Accessibility Tree and the <abbr title="Document Object Model">DOM</abbr> Tree&nbsp;<span class="permalink"><a href="#intro_treetypes" aria-label="Permalink for 1.2 The Accessibility Tree and the DOM Tree" title="Permalink for 1.2 The Accessibility Tree and the DOM Tree"><span>§</span></a></span></h3>
     <p>
       The <a class="termref internalDFN" data-lt="Accessibility Tree" href="#dfn-accessibility-tree" data-link-type="dfn">accessibility tree</a> 
       and the <abbr title="Document Object Model">DOM</abbr> tree are parallel structures.  
@@ -1160,7 +1155,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
   </section>
 </section>
 <section id="normative">
-	<!--OddPage--><h2 id="x2-normative-user-agent-implementation-requirements-for-svg"><span class="secno">2. </span>Normative User Agent Implementation Requirements for <abbr title="Scalable Vector Graphics">SVG</abbr>&nbsp;<span class="permalink"><a href="#normative" aria-label="Permalink for 2. Normative User Agent Implementation Requirements for SVG" title="Permalink for 2. Normative User Agent Implementation Requirements for SVG"><span>Â§</span></a></span></h2>
+	<!--OddPage--><h2 id="x2-normative-user-agent-implementation-requirements-for-svg"><span class="secno">2. </span>Normative User Agent Implementation Requirements for <abbr title="Scalable Vector Graphics">SVG</abbr>&nbsp;<span class="permalink"><a href="#normative" aria-label="Permalink for 2. Normative User Agent Implementation Requirements for SVG" title="Permalink for 2. Normative User Agent Implementation Requirements for SVG"><span>§</span></a></span></h2>
 	<p>
     This specification indicates whether a section is 
     <a class="termref" href="#dfn-normative">normative</a> or <a class="termref" href="#dfn-informative">informative</a> 
@@ -1199,7 +1194,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
   </p>
 </section>
 <section id="glossary">
-  <!--OddPage--><h2 id="x3-important-terms"><span class="secno">3. </span>Important Terms&nbsp;<span class="permalink"><a href="#glossary" aria-label="Permalink for 3. Important Terms" title="Permalink for 3. Important Terms"><span>Â§</span></a></span></h2>
+  <!--OddPage--><h2 id="x3-important-terms"><span class="secno">3. </span>Important Terms&nbsp;<span class="permalink"><a href="#glossary" aria-label="Permalink for 3. Important Terms" title="Permalink for 3. Important Terms"><span>§</span></a></span></h2>
   <p>While some terms are defined in place, the following definitions are used throughout this document. </p>
 <dl class="termlist">
     <dt><dfn data-lt="accessibility api|accessibility apis" data-dfn-type="dfn" id="dfn-accessibility-api">Accessibility <abbr title="Application Programming Interface">API</abbr></dfn></dt>
@@ -1412,7 +1407,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 
 </section>
 <section class="section" id="keyboard-focus">
-	<!--OddPage--><h2 id="x4-supporting-keyboard-navigation"><span class="secno">4. </span>Supporting Keyboard Navigation&nbsp;<span class="permalink"><a href="#keyboard-focus" aria-label="Permalink for 4. Supporting Keyboard Navigation" title="Permalink for 4. Supporting Keyboard Navigation"><span>Â§</span></a></span></h2>
+	<!--OddPage--><h2 id="x4-supporting-keyboard-navigation"><span class="secno">4. </span>Supporting Keyboard Navigation&nbsp;<span class="permalink"><a href="#keyboard-focus" aria-label="Permalink for 4. Supporting Keyboard Navigation" title="Permalink for 4. Supporting Keyboard Navigation"><span>§</span></a></span></h2>
   <p>
     Enabling keyboard navigation in web applications 
     is a necessary step toward making accessible web applications possible. 
@@ -1445,7 +1440,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 
 </section>
 <section id="mapping">
-	<!--OddPage--><h2 id="x5-mapping-wai-aria-to-accessibility-apis"><span class="secno">5. </span>Mapping <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> to Accessibility <abbr title="Application Programming Interfaces">APIs</abbr>&nbsp;<span class="permalink"><a href="#mapping" aria-label="Permalink for 5. Mapping WAI-ARIA to Accessibility APIs" title="Permalink for 5. Mapping WAI-ARIA to Accessibility APIs"><span>Â§</span></a></span></h2>
+	<!--OddPage--><h2 id="x5-mapping-wai-aria-to-accessibility-apis"><span class="secno">5. </span>Mapping <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> to Accessibility <abbr title="Application Programming Interfaces">APIs</abbr>&nbsp;<span class="permalink"><a href="#mapping" aria-label="Permalink for 5. Mapping WAI-ARIA to Accessibility APIs" title="Permalink for 5. Mapping WAI-ARIA to Accessibility APIs"><span>§</span></a></span></h2>
   <p>
     <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> support 
     was formally introduced to <abbr title="Scalable Vector Graphics">SVG</abbr> in Scalable Vector Graphics (<abbr title="Scalable Vector Graphics">SVG</abbr>) 2 [<cite><a class="bibref" href="#bib-SVG2">SVG2</a></cite>],
@@ -1457,14 +1452,14 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
   </p>
 
 	<section id="mapping_general">
-		<h3 id="x5-1-general-rules-for-exposing-wai-aria-semantics"><span class="secno">5.1 </span>General rules for exposing <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> semantics&nbsp;<span class="permalink"><a href="#mapping_general" aria-label="Permalink for 5.1 General rules for exposing WAI-ARIA semantics" title="Permalink for 5.1 General rules for exposing WAI-ARIA semantics"><span>Â§</span></a></span></h3>
+		<h3 id="x5-1-general-rules-for-exposing-wai-aria-semantics"><span class="secno">5.1 </span>General rules for exposing <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> semantics&nbsp;<span class="permalink"><a href="#mapping_general" aria-label="Permalink for 5.1 General rules for exposing WAI-ARIA semantics" title="Permalink for 5.1 General rules for exposing WAI-ARIA semantics"><span>§</span></a></span></h3>
     <p>
       <abbr title="Scalable Vector Graphics">SVG</abbr> user agents <strong class="rfc2119"><em class="rfc2119" title="MUST">MUST</em></strong> conform to <a class="core-mapping" href="http://w3c.github.io/aria/core-aam/core-aam.html#mapping_general">General rules for exposing <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> semantics</a> in [<cite><a class="bibref" href="#bib-CORE-AAM">CORE-AAM</a></cite>], 
       with the additions described in the following sub-sections.
     </p>
     
     <section id="exclude_elements">
-      <h4 id="x5-1-1-excluding-elements-from-the-accessibility-tree"><span class="secno">5.1.1 </span>Excluding Elements from the Accessibility Tree&nbsp;<span class="permalink"><a href="#exclude_elements" aria-label="Permalink for 5.1.1 Excluding Elements from the Accessibility Tree" title="Permalink for 5.1.1 Excluding Elements from the Accessibility Tree"><span>Â§</span></a></span></h4>
+      <h4 id="x5-1-1-excluding-elements-from-the-accessibility-tree"><span class="secno">5.1.1 </span>Excluding Elements from the Accessibility Tree&nbsp;<span class="permalink"><a href="#exclude_elements" aria-label="Permalink for 5.1.1 Excluding Elements from the Accessibility Tree" title="Permalink for 5.1.1 Excluding Elements from the Accessibility Tree"><span>§</span></a></span></h4>
       <p>
         Certain elements in the <abbr title="Document Object Model">DOM</abbr>
         are not exposed via the <a class="termref" href="#dfn-accessibility-api">accessibility <abbr title="Application Programming Interface">API</abbr></a>.
@@ -1724,7 +1719,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
     </section>
     
     <section id="include_elements">
-      <h4 id="x5-1-2-including-elements-in-the-accessibility-tree"><span class="secno">5.1.2 </span>Including Elements in the Accessibility Tree&nbsp;<span class="permalink"><a href="#include_elements" aria-label="Permalink for 5.1.2 Including Elements in the Accessibility Tree" title="Permalink for 5.1.2 Including Elements in the Accessibility Tree"><span>Â§</span></a></span></h4>
+      <h4 id="x5-1-2-including-elements-in-the-accessibility-tree"><span class="secno">5.1.2 </span>Including Elements in the Accessibility Tree&nbsp;<span class="permalink"><a href="#include_elements" aria-label="Permalink for 5.1.2 Including Elements in the Accessibility Tree" title="Permalink for 5.1.2 Including Elements in the Accessibility Tree"><span>§</span></a></span></h4>
       
       <p>
         Many <abbr title="Scalable Vector Graphics">SVG</abbr> elements—although rendered to the screen—do not have an intrinsic semantic meaning.
@@ -1817,16 +1812,16 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
       <ul>
         <li>
           It has at least one direct child 
-          <span class="element-name">â€˜<a href="http://www.w3.org/TR/SVG2/struct.html#TitleElement"><span>title</span></a>â€™</span> element
+          <span class="element-name">‘<a href="http://www.w3.org/TR/SVG2/struct.html#TitleElement"><span>title</span></a>’</span> element
           or
-          <span class="element-name">â€˜<a href="http://www.w3.org/TR/SVG2/struct.html#DescElement"><span>desc</span></a>'</span> element that is not empty after trimming whitespace.  User agents <em class="rfc2119" title="MAY">MAY</em> include elements with these child elements without checking for valid text content.
+          <span class="element-name">‘<a href="http://www.w3.org/TR/SVG2/struct.html#DescElement"><span>desc</span></a>'</span> element that is not empty after trimming whitespace.  User agents <em class="rfc2119" title="MAY">MAY</em> include elements with these child elements without checking for valid text content.
         </li>
         <li>
           It has a non-empty 
-          <span class="attr-name">â€˜<a class="property-reference" href="http://w3c.github.io/aria/aria/aria.html#aria-label"><span>aria-label</span></a>â€™</span> attribute (after trimming whitespace), or an
-          <span class="attr-name">â€˜<a class="property-reference" href="http://w3c.github.io/aria/aria/aria.html#aria-labelledby"><span>aria-labelledby</span></a>â€™</span> attribute 
+          <span class="attr-name">‘<a class="property-reference" href="http://w3c.github.io/aria/aria/aria.html#aria-label"><span>aria-label</span></a>’</span> attribute (after trimming whitespace), or an
+          <span class="attr-name">‘<a class="property-reference" href="http://w3c.github.io/aria/aria/aria.html#aria-labelledby"><span>aria-labelledby</span></a>’</span> attribute 
           or 
-          <span class="attr-name">â€˜<a class="property-reference" href="http://w3c.github.io/aria/aria/aria.html#aria-describedby"><span>aria-describedby</span></a>â€™</span> attribute containing valid IDREF tokens.  User agents <em class="rfc2119" title="MAY">MAY</em> include elements with these attributes without checking for validity.
+          <span class="attr-name">‘<a class="property-reference" href="http://w3c.github.io/aria/aria/aria.html#aria-describedby"><span>aria-describedby</span></a>’</span> attribute containing valid IDREF tokens.  User agents <em class="rfc2119" title="MAY">MAY</em> include elements with these attributes without checking for validity.
         </li>
         <li>
           It has a valid integer
@@ -1924,7 +1919,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
   </section>
   
 	<section id="mapping_conflicts">
-		<!--OddPage--><h2 id="x6-conflicts-between-native-markup-semantics-and-wai-aria"><span class="secno">6. </span>Conflicts between native markup semantics and <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr>&nbsp;<span class="permalink"><a href="#mapping_conflicts" aria-label="Permalink for 6. Conflicts between native markup semantics and WAI-ARIA" title="Permalink for 6. Conflicts between native markup semantics and WAI-ARIA"><span>Â§</span></a></span></h2>
+		<!--OddPage--><h2 id="x6-conflicts-between-native-markup-semantics-and-wai-aria"><span class="secno">6. </span>Conflicts between native markup semantics and <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr>&nbsp;<span class="permalink"><a href="#mapping_conflicts" aria-label="Permalink for 6. Conflicts between native markup semantics and WAI-ARIA" title="Permalink for 6. Conflicts between native markup semantics and WAI-ARIA"><span>§</span></a></span></h2>
     <p>
       <abbr title="Scalable Vector Graphics">SVG</abbr> user agents 
       <span class="rfc2119"><em class="rfc2119" title="MUST">MUST</em></span> conform to 
@@ -1938,14 +1933,14 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
   </section>
   
 	<section id="mapping_nodirect">
-		<!--OddPage--><h2 id="x7-exposing-attributes-that-do-not-directly-map-to-accessibility-api-properties"><span class="secno">7. </span>Exposing attributes that do not directly map to accessibility <abbr title="application programming interface">API</abbr> properties&nbsp;<span class="permalink"><a href="#mapping_nodirect" aria-label="Permalink for 7. Exposing attributes that do not directly map to accessibility API properties" title="Permalink for 7. Exposing attributes that do not directly map to accessibility API properties"><span>Â§</span></a></span></h2>
+		<!--OddPage--><h2 id="x7-exposing-attributes-that-do-not-directly-map-to-accessibility-api-properties"><span class="secno">7. </span>Exposing attributes that do not directly map to accessibility <abbr title="application programming interface">API</abbr> properties&nbsp;<span class="permalink"><a href="#mapping_nodirect" aria-label="Permalink for 7. Exposing attributes that do not directly map to accessibility API properties" title="Permalink for 7. Exposing attributes that do not directly map to accessibility API properties"><span>§</span></a></span></h2>
     <p>
       <abbr title="Scalable Vector Graphics">SVG</abbr> user agents <span class="rfc2119"><em class="rfc2119" title="MUST">MUST</em></span> conform to <a class="core-mapping" href="http://w3c.github.io/aria/core-aam/core-aam.html#mapping_nodirect">Exposing attributes that do not directly map to accessibility <abbr title="application programming interface">API</abbr> properties</a> in [<cite><a class="bibref" href="#bib-CORE-AAM">CORE-AAM</a></cite>].
     </p>
 	</section>
   
 	<section id="mapping_role">
-		<!--OddPage--><h2 id="x8-role-mapping"><span class="secno">8. </span>Role mapping&nbsp;<span class="permalink"><a href="#mapping_role" aria-label="Permalink for 8. Role mapping" title="Permalink for 8. Role mapping"><span>Â§</span></a></span></h2>
+		<!--OddPage--><h2 id="x8-role-mapping"><span class="secno">8. </span>Role mapping&nbsp;<span class="permalink"><a href="#mapping_role" aria-label="Permalink for 8. Role mapping" title="Permalink for 8. Role mapping"><span>§</span></a></span></h2>
 		<p>
       Platform <a class="termref" href="#dfn-accessibility-api">accessibility <abbr title="Application Programming Interfaces">APIs</abbr></a> 
       traditionally have had a finite set of 
@@ -1970,14 +1965,14 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
     </p>
     
     <section id="roleMappingGeneralRules">
-      <h3 id="x8-1-general-rules"><span class="secno">8.1 </span>General Rules&nbsp;<span class="permalink"><a href="#roleMappingGeneralRules" aria-label="Permalink for 8.1 General Rules" title="Permalink for 8.1 General Rules"><span>Â§</span></a></span></h3>
+      <h3 id="x8-1-general-rules"><span class="secno">8.1 </span>General Rules&nbsp;<span class="permalink"><a href="#roleMappingGeneralRules" aria-label="Permalink for 8.1 General Rules" title="Permalink for 8.1 General Rules"><span>§</span></a></span></h3>
       <p>
         [<cite><a class="bibref" href="#bib-SVG">SVG</a></cite>] user agents <span class="rfc2119"><em class="rfc2119" title="MUST">MUST</em></span> conform to the Role Mapping <a class="core-mapping" href="http://w3c.github.io/aria/core-aam/core-aam.html#mapping_general">General Rules</a> accessibility <abbr title="Application Programming Interfaces">API</abbr> computational requirements in [<cite><a class="bibref" href="#bib-CORE-AAM">CORE-AAM</a></cite>].
       </p>
     </section>
     
     <section id="mapping_role_table">
-      <h3 id="x8-2-svg-element-mapping-table"><span class="secno">8.2 </span><abbr title="Scalable Vector Graphics">SVG</abbr> Element Mapping Table&nbsp;<span class="permalink"><a href="#mapping_role_table" aria-label="Permalink for 8.2 SVG Element Mapping Table" title="Permalink for 8.2 SVG Element Mapping Table"><span>Â§</span></a></span></h3>
+      <h3 id="x8-2-svg-element-mapping-table"><span class="secno">8.2 </span><abbr title="Scalable Vector Graphics">SVG</abbr> Element Mapping Table&nbsp;<span class="permalink"><a href="#mapping_role_table" aria-label="Permalink for 8.2 SVG Element Mapping Table" title="Permalink for 8.2 SVG Element Mapping Table"><span>§</span></a></span></h3>
       <p>
         This section defines how elements in SVG2 
         map to <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> roles and platform accessibility <abbr title="application programming interfaces">APIs</abbr> 
@@ -2749,7 +2744,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
   </section>
 
 	<section id="mapping_state-property">
-		<!--OddPage--><h2 id="x9-state-and-property-mapping"><span class="secno">9. </span>State and Property Mapping&nbsp;<span class="permalink"><a href="#mapping_state-property" aria-label="Permalink for 9. State and Property Mapping" title="Permalink for 9. State and Property Mapping"><span>Â§</span></a></span></h2>
+		<!--OddPage--><h2 id="x9-state-and-property-mapping"><span class="secno">9. </span>State and Property Mapping&nbsp;<span class="permalink"><a href="#mapping_state-property" aria-label="Permalink for 9. State and Property Mapping" title="Permalink for 9. State and Property Mapping"><span>§</span></a></span></h2>
 	  <p>
       This section describes how to expose <abbr title="Accessible Rich Internet Applications">WAI-ARIA</abbr> <a href="#dfn-state" class="termref">states</a> and <a href="#dfn-object" class="termref">object</a> <a href="#dfn-property" class="termref">properties</a>. <abbr title="Scalable Vector Graphics">SVG</abbr> user agents <span class="rfc2119"><em class="rfc2119" title="MUST">MUST</em></span> conform to the <a href="http://w3c.github.io/aria/core-aam/core-aam.html#mapping_state-property" class="core-mapping">State and Property Mapping</a> accessibility <abbr title="Application Programming Interfaces">API</abbr> computational requirements in [<cite><a class="bibref" href="#bib-CORE-AAM">CORE-AAM</a></cite>].
     </p>
@@ -2809,9 +2804,9 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 	</section>
   
 	<section id="mapping_additional">
-    <!--OddPage--><h2 id="x10-special-processing-requiring-additional-computation"><span class="secno">10. </span>Special Processing Requiring Additional Computation&nbsp;<span class="permalink"><a href="#mapping_additional" aria-label="Permalink for 10. Special Processing Requiring Additional Computation" title="Permalink for 10. Special Processing Requiring Additional Computation"><span>Â§</span></a></span></h2>
+    <!--OddPage--><h2 id="x10-special-processing-requiring-additional-computation"><span class="secno">10. </span>Special Processing Requiring Additional Computation&nbsp;<span class="permalink"><a href="#mapping_additional" aria-label="Permalink for 10. Special Processing Requiring Additional Computation" title="Permalink for 10. Special Processing Requiring Additional Computation"><span>§</span></a></span></h2>
     <section id="mapping_additional_nd">
-      <h3 id="x10-1-name-and-description"><span class="secno">10.1 </span>Name and Description&nbsp;<span class="permalink"><a href="#mapping_additional_nd" aria-label="Permalink for 10.1 Name and Description" title="Permalink for 10.1 Name and Description"><span>Â§</span></a></span></h3>
+      <h3 id="x10-1-name-and-description"><span class="secno">10.1 </span>Name and Description&nbsp;<span class="permalink"><a href="#mapping_additional_nd" aria-label="Permalink for 10.1 Name and Description" title="Permalink for 10.1 Name and Description"><span>§</span></a></span></h3>
       <p>
         When computing an <a class="termref internalDFN" href="#dfn-accessible-name" data-link-type="dfn">accessible name</a> or 
         <a class="termref internalDFN" href="#dfn-accessible-description" data-link-type="dfn">accessible description</a>, 
@@ -2952,7 +2947,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
     </section>
     
 		<section id="mapping_additional_widget-value">
-			<h3 id="x10-2-widget-values"><span class="secno">10.2 </span>Widget Values&nbsp;<span class="permalink"><a href="#mapping_additional_widget-value" aria-label="Permalink for 10.2 Widget Values" title="Permalink for 10.2 Widget Values"><span>Â§</span></a></span></h3>
+			<h3 id="x10-2-widget-values"><span class="secno">10.2 </span>Widget Values&nbsp;<span class="permalink"><a href="#mapping_additional_widget-value" aria-label="Permalink for 10.2 Widget Values" title="Permalink for 10.2 Widget Values"><span>§</span></a></span></h3>
       <p>
         <abbr title="Scalable Vector Graphics">SVG</abbr> user agents <span class="rfc2119"><em class="rfc2119" title="MUST">MUST</em></span> conform to the 
         <a href="http://w3c.github.io/aria/core-aam/core-aam.html#mapping_additional_widget-value" class="core-mapping">Widget Values</a> 
@@ -2961,7 +2956,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
     </section>
     
 	  <section id="mapping_additional_relations">
-      <h3 id="x10-3-relations"><span class="secno">10.3 </span>Relations&nbsp;<span class="permalink"><a href="#mapping_additional_relations" aria-label="Permalink for 10.3 Relations" title="Permalink for 10.3 Relations"><span>Â§</span></a></span></h3>
+      <h3 id="x10-3-relations"><span class="secno">10.3 </span>Relations&nbsp;<span class="permalink"><a href="#mapping_additional_relations" aria-label="Permalink for 10.3 Relations" title="Permalink for 10.3 Relations"><span>§</span></a></span></h3>
       <p>
         <abbr title="Scalable Vector Graphics">SVG</abbr> user agents <span class="rfc2119"><em class="rfc2119" title="MUST">MUST</em></span> conform to the 
         <a href="http://w3c.github.io/aria/core-aam/core-aam.html#mapping_additional_relations" class="core-mapping">Relations</a> 
@@ -2978,7 +2973,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 	  </section>
     
 	  <section id="mapping_additional_position">
-			<h3 id="x10-4-group-position"><span class="secno">10.4 </span>Group Position&nbsp;<span class="permalink"><a href="#mapping_additional_position" aria-label="Permalink for 10.4 Group Position" title="Permalink for 10.4 Group Position"><span>Â§</span></a></span></h3>
+			<h3 id="x10-4-group-position"><span class="secno">10.4 </span>Group Position&nbsp;<span class="permalink"><a href="#mapping_additional_position" aria-label="Permalink for 10.4 Group Position" title="Permalink for 10.4 Group Position"><span>§</span></a></span></h3>
       <p><abbr title="Scalable Vector Graphics">SVG</abbr> user agents <span class="rfc2119"><em class="rfc2119" title="MUST">MUST</em></span> conform to the 
         <a href="http://w3c.github.io/aria/core-aam/core-aam.html#mapping_additional_position" class="core-mapping">Group Position</a> 
         accessibility <abbr title="Application Programming Interfaces">API</abbr> computational requirements in [<cite><a class="bibref" href="#bib-CORE-AAM">CORE-AAM</a></cite>].
@@ -2986,7 +2981,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
     </section> 
       
     <section id="mapping_use_shadow_tree">
-			<h3 id="x10-5-use-element-shadow-trees"><span class="secno">10.5 </span>Use-Element Shadow Trees&nbsp;<span class="permalink"><a href="#mapping_use_shadow_tree" aria-label="Permalink for 10.5 Use-Element Shadow Trees" title="Permalink for 10.5 Use-Element Shadow Trees"><span>Â§</span></a></span></h3>
+			<h3 id="x10-5-use-element-shadow-trees"><span class="secno">10.5 </span>Use-Element Shadow Trees&nbsp;<span class="permalink"><a href="#mapping_use_shadow_tree" aria-label="Permalink for 10.5 Use-Element Shadow Trees" title="Permalink for 10.5 Use-Element Shadow Trees"><span>§</span></a></span></h3>
       
       <p>This specification uses the terms
         <a href="https://dom.spec.whatwg.org/#concept-shadow-tree">shadow tree</a> 
@@ -3036,7 +3031,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
   </section>
     
     <section id="mapping_view">
-      <h3 id="x10-6-svg-views"><span class="secno">10.6 </span><abbr title="Scalable Vector Graphics">SVG</abbr> Views&nbsp;<span class="permalink"><a href="#mapping_view" aria-label="Permalink for 10.6 SVG Views" title="Permalink for 10.6 SVG Views"><span>Â§</span></a></span></h3>
+      <h3 id="x10-6-svg-views"><span class="secno">10.6 </span><abbr title="Scalable Vector Graphics">SVG</abbr> Views&nbsp;<span class="permalink"><a href="#mapping_view" aria-label="Permalink for 10.6 SVG Views" title="Permalink for 10.6 SVG Views"><span>§</span></a></span></h3>
       <p>
         <abbr title="Scalable Vector Graphics">SVG</abbr> provides authors with the means of specifying a particular 
         <a href="https://svgwg.org/svg2-draft/linking.html#LinksIntoSVG">view of the document</a>.
@@ -3137,7 +3132,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
     </section>
 
     <section id="mapping_animation">
-      <h3 id="x10-7-declarative-animation"><span class="secno">10.7 </span>Declarative Animation&nbsp;<span class="permalink"><a href="#mapping_animation" aria-label="Permalink for 10.7 Declarative Animation" title="Permalink for 10.7 Declarative Animation"><span>Â§</span></a></span></h3>
+      <h3 id="x10-7-declarative-animation"><span class="secno">10.7 </span>Declarative Animation&nbsp;<span class="permalink"><a href="#mapping_animation" aria-label="Permalink for 10.7 Declarative Animation" title="Permalink for 10.7 Declarative Animation"><span>§</span></a></span></h3>
       <p>
         <abbr title="Scalable Vector Graphics">SVG</abbr> animation elements may modify element attributes and style properties.
         <abbr title="cascading style sheets">CSS</abbr> animations may modify style properties.
@@ -3167,7 +3162,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
   </section>
   
   <section id="mapping_actions">
-		<!--OddPage--><h2 id="x11-actions"><span class="secno">11. </span>Actions&nbsp;<span class="permalink"><a href="#mapping_actions" aria-label="Permalink for 11. Actions" title="Permalink for 11. Actions"><span>Â§</span></a></span></h2>
+		<!--OddPage--><h2 id="x11-actions"><span class="secno">11. </span>Actions&nbsp;<span class="permalink"><a href="#mapping_actions" aria-label="Permalink for 11. Actions" title="Permalink for 11. Actions"><span>§</span></a></span></h2>
     <p>
       <abbr title="Scalable Vector Graphics">SVG</abbr> user agents <span class="rfc2119"><em class="rfc2119" title="MUST">MUST</em></span> conform to the 
       <a href="http://w3c.github.io/aria/core-aam/core-aam.html#mapping_actions" class="core-mapping">Actions</a> 
@@ -3176,7 +3171,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
   </section>
   
   <section id="mapping_events">
-		<!--OddPage--><h2 id="x12-events"><span class="secno">12. </span>Events&nbsp;<span class="permalink"><a href="#mapping_events" aria-label="Permalink for 12. Events" title="Permalink for 12. Events"><span>Â§</span></a></span></h2>
+		<!--OddPage--><h2 id="x12-events"><span class="secno">12. </span>Events&nbsp;<span class="permalink"><a href="#mapping_events" aria-label="Permalink for 12. Events" title="Permalink for 12. Events"><span>§</span></a></span></h2>
     <p>
       <a href="#dfn-user-agent" class="termref">User agents</a> fire 
       <a href="#dfn-event" class="termref">events</a> for user actions, 
@@ -3190,7 +3185,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
   </section>
   
 <section id="document-handling">
-	<!--OddPage--><h2 id="x13-special-document-handling-procedures"><span class="secno">13. </span>Special Document Handling Procedures&nbsp;<span class="permalink"><a href="#document-handling" aria-label="Permalink for 13. Special Document Handling Procedures" title="Permalink for 13. Special Document Handling Procedures"><span>Â§</span></a></span></h2>
+	<!--OddPage--><h2 id="x13-special-document-handling-procedures"><span class="secno">13. </span>Special Document Handling Procedures&nbsp;<span class="permalink"><a href="#document-handling" aria-label="Permalink for 13. Special Document Handling Procedures" title="Permalink for 13. Special Document Handling Procedures"><span>§</span></a></span></h2>
   <p>
     <abbr title="Scalable Vector Graphics">SVG</abbr> user agents <span class="rfc2119"><em class="rfc2119" title="MUST">MUST</em></span> conform to the 
     <a href="http://w3c.github.io/aria/core-aam/core-aam.html#document-handling" class="core-mapping">Special Document Handling Procedures</a> 
@@ -3199,22 +3194,22 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 </section>
   
 <section id="appendices" class="appendix">
-	<!--OddPage--><h2 id="a-appendices"><span class="secno">A. </span>Appendices&nbsp;<span class="permalink"><a href="#appendices" aria-label="Permalink for A. Appendices" title="Permalink for A. Appendices"><span>Â§</span></a></span></h2>
+	<!--OddPage--><h2 id="a-appendices"><span class="secno">A. </span>Appendices&nbsp;<span class="permalink"><a href="#appendices" aria-label="Permalink for A. Appendices" title="Permalink for A. Appendices"><span>§</span></a></span></h2>
   
 	<section id="appendices_references">
-    <h3 id="a-1-references"><span class="secno">A.1 </span>References&nbsp;<span class="permalink"><a href="#appendices_references" aria-label="Permalink for A.1 References" title="Permalink for A.1 References"><span>Â§</span></a></span></h3>
+    <h3 id="a-1-references"><span class="secno">A.1 </span>References&nbsp;<span class="permalink"><a href="#appendices_references" aria-label="Permalink for A.1 References" title="Permalink for A.1 References"><span>§</span></a></span></h3>
     <p>Placeholder for references</p>
   </section>
   
 	<!--<div data-include='common/acknowledgements.html' data-include-replace='true'></div>-->
 	<section class="appendix informative section" id="acknowledgements">
-    <h3 id="a-2-acknowledgments"><span class="secno">A.2 </span>Acknowledgments&nbsp;<span class="permalink"><a href="#acknowledgements" aria-label="Permalink for A.2 Acknowledgments" title="Permalink for A.2 Acknowledgments"><span>Â§</span></a></span></h3><p><em>This section is non-normative.</em></p>
+    <h3 id="a-2-acknowledgments"><span class="secno">A.2 </span>Acknowledgments&nbsp;<span class="permalink"><a href="#acknowledgements" aria-label="Permalink for A.2 Acknowledgments" title="Permalink for A.2 Acknowledgments"><span>§</span></a></span></h3><p><em>This section is non-normative.</em></p>
     <p>The following people contributed to the development of this document.</p>
     <section class="section" id="ack_group">
-      <h4 id="a-2-1-participants-active-in-the-svg-accessibility-task-force-active-at-the-time-of-publication"><span class="secno">A.2.1 </span>Participants active in the <abbr title="Scalable Vector Graphics">SVG</abbr> Accessibility Task Force active at the time of publication&nbsp;<span class="permalink"><a href="#ack_group" aria-label="Permalink for A.2.1 Participants active in the SVG Accessibility Task Force active at the time of publication" title="Permalink for A.2.1 Participants active in the SVG Accessibility Task Force active at the time of publication"><span>Â§</span></a></span></h4>
+      <h4 id="a-2-1-participants-active-in-the-svg-accessibility-task-force-active-at-the-time-of-publication"><span class="secno">A.2.1 </span>Participants active in the <abbr title="Scalable Vector Graphics">SVG</abbr> Accessibility Task Force active at the time of publication&nbsp;<span class="permalink"><a href="#ack_group" aria-label="Permalink for A.2.1 Participants active in the SVG Accessibility Task Force active at the time of publication" title="Permalink for A.2.1 Participants active in the SVG Accessibility Task Force active at the time of publication"><span>§</span></a></span></h4>
       <ul>
         <li>Amelia Bellamy-Royds</li>
-        <li>Erik DahlstrÃ¶m (Opera)</li>
+        <li>Erik Dahlström (Opera)</li>
         <li>Amy Dai (Oracle Corporation)</li>
         <li>Fred Esch (IBM Corporation)</li>
         <li>Cameron McCormack (Mozilla Foundation)</li>
@@ -3223,12 +3218,12 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
         <li>Janina Sajka</li>
         <li>Doug Schepers (<abbr title="World Wide Web Consortium">W3C</abbr>)</li>
         <li>Rich Schwerdtfeger (Knowbility)</li>
-        <li>LÃ©onie Watson (The Paciello Group, LLC)</li>
+        <li>Léonie Watson (The Paciello Group, LLC)</li>
         <li>Jason White (Educational Testing Service)</li>
       </ul>
     </section>
     <section class="section" id="ack_funders">
-      <h4 id="a-2-2-enabling-funders"><span class="secno">A.2.2 </span>Enabling funders&nbsp;<span class="permalink"><a href="#ack_funders" aria-label="Permalink for A.2.2 Enabling funders" title="Permalink for A.2.2 Enabling funders"><span>Â§</span></a></span></h4>
+      <h4 id="a-2-2-enabling-funders"><span class="secno">A.2.2 </span>Enabling funders&nbsp;<span class="permalink"><a href="#ack_funders" aria-label="Permalink for A.2.2 Enabling funders" title="Permalink for A.2.2 Enabling funders"><span>§</span></a></span></h4>
       <p>
         This publication has been funded in part with 
         Federal funds from the U.S. Department of Education, 
@@ -3245,14 +3240,14 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 </section>
 
 
-<section id="references" class="appendix"><!--OddPage--><h2 id="b-references"><span class="secno">B. </span>References&nbsp;<span class="permalink"><a href="#references" aria-label="Permalink for B. References" title="Permalink for B. References"><span>Â§</span></a></span></h2><section id="normative-references"><h3 id="b-1-normative-references"><span class="secno">B.1 </span>Normative references&nbsp;<span class="permalink"><a href="#normative-references" aria-label="Permalink for B.1 Normative references" title="Permalink for B.1 Normative references"><span>Â§</span></a></span></h3><dl class="bibliography"><dt id="bib-ACCNAME-AAM">[ACCNAME-AAM]</dt><dd><a href="http://www.w3.org/TR/accname-aam-1.1/"><cite>Accessible Name and Description: Computation and API Mappings 1.1</cite></a>. Joseph Scheuhammer; Michael Cooper; Andi Snow-Weaver; Aaron Leventhal et al. W3C. W3C Working Draft. URL: <a href="http://www.w3.org/TR/accname-aam-1.1/">http://www.w3.org/TR/accname-aam-1.1/</a>
+<section id="references" class="appendix"><!--OddPage--><h2 id="b-references"><span class="secno">B. </span>References&nbsp;<span class="permalink"><a href="#references" aria-label="Permalink for B. References" title="Permalink for B. References"><span>§</span></a></span></h2><section id="normative-references"><h3 id="b-1-normative-references"><span class="secno">B.1 </span>Normative references&nbsp;<span class="permalink"><a href="#normative-references" aria-label="Permalink for B.1 Normative references" title="Permalink for B.1 Normative references"><span>§</span></a></span></h3><dl class="bibliography"><dt id="bib-ACCNAME-AAM">[ACCNAME-AAM]</dt><dd><a href="http://www.w3.org/TR/accname-aam-1.1/"><cite>Accessible Name and Description: Computation and API Mappings 1.1</cite></a>. Joseph Scheuhammer; Michael Cooper; Andi Snow-Weaver; Aaron Leventhal et al. W3C. W3C Working Draft. URL: <a href="http://www.w3.org/TR/accname-aam-1.1/">http://www.w3.org/TR/accname-aam-1.1/</a>
 </dd><dt id="bib-CORE-AAM">[CORE-AAM]</dt><dd><a href="http://www.w3.org/TR/core-aam-1.1/"><cite>Core Accessibility API Mappings 1.1</cite></a>. Joseph Scheuhammer; Michael Cooper; Andi Snow-Weaver; Aaron Leventhal et al. W3C. W3C Working Draft. URL: <a href="http://www.w3.org/TR/core-aam-1.1/">http://www.w3.org/TR/core-aam-1.1/</a>
 </dd><dt id="bib-DOM">[DOM]</dt><dd><a href="https://dom.spec.whatwg.org/"><cite>DOM Standard</cite></a>. Anne van Kesteren. WHATWG. Living Standard. URL: <a href="https://dom.spec.whatwg.org/">https://dom.spec.whatwg.org/</a>
 </dd><dt id="bib-GRAPHICS-AAM">[GRAPHICS-AAM]</dt><dd><a href="http://www.w3.org/TR/graphics-aam-1.0/"><cite>Graphics Accessibility API Mappings</cite></a>. Amelia Bellamy-Royds; Fred Esch; Richard Schwerdtfeger et al. W3C. W3C Working Draft. URL: <a href="http://www.w3.org/TR/graphics-aam-1.0/">http://www.w3.org/TR/graphics-aam-1.0/</a>
 </dd><dt id="bib-HTML-AAM">[HTML-AAM]</dt><dd><a href="http://www.w3.org/TR/html-aam-1.0/"><cite>HTML Accessibility API Mappings 1.0</cite></a>. Steve Faulkner; Jason Kiss; Cynthia Shelly; Alexander Surkov et al. W3C. W3C Working Draft. URL: <a href="http://www.w3.org/TR/html-aam-1.0/">http://www.w3.org/TR/html-aam-1.0/</a>
 </dd><dt id="bib-SVG">[SVG]</dt><dd><a href="https://www.w3.org/TR/SVG/"><cite>Scalable Vector Graphics (SVG) 1.0 Specification</cite></a>. Jon Ferraiolo. W3C. 4 September 2001. W3C Recommendation. URL: <a href="https://www.w3.org/TR/SVG/">https://www.w3.org/TR/SVG/</a>
 </dd><dt id="bib-WAI-ARIA">[WAI-ARIA]</dt><dd><a href="http://www.w3.org/TR/wai-aria-1.1/"><cite>Accessible Rich Internet Applications (WAI-ARIA) 1.1</cite></a>. James Craig; Michael Cooper; Shane McCarron et al. W3C. W3C Working Draft. URL: <a href="http://www.w3.org/TR/wai-aria-1.1/">http://www.w3.org/TR/wai-aria-1.1/</a>
-</dd></dl></section><section id="informative-references"><h3 id="b-2-informative-references"><span class="secno">B.2 </span>Informative references&nbsp;<span class="permalink"><a href="#informative-references" aria-label="Permalink for B.2 Informative references" title="Permalink for B.2 Informative references"><span>Â§</span></a></span></h3><dl class="bibliography"><dt id="bib-ARIA-PRACTICES">[ARIA-PRACTICES]</dt><dd><a href="http://www.w3.org/TR/wai-aria-practices-1.1/"><cite>WAI-ARIA Authoring Practicess 1.1</cite></a>. Matt King; James Nurthen; Michael Cooper; Michiel Bijl; Joseph Scheuhammer; Lisa Pappas; Richard Schwerdtfeger et al. W3C. W3C Working Draft. URL: <a href="http://www.w3.org/TR/wai-aria-practices-1.1/">http://www.w3.org/TR/wai-aria-practices-1.1/</a>
+</dd></dl></section><section id="informative-references"><h3 id="b-2-informative-references"><span class="secno">B.2 </span>Informative references&nbsp;<span class="permalink"><a href="#informative-references" aria-label="Permalink for B.2 Informative references" title="Permalink for B.2 Informative references"><span>§</span></a></span></h3><dl class="bibliography"><dt id="bib-ARIA-PRACTICES">[ARIA-PRACTICES]</dt><dd><a href="http://www.w3.org/TR/wai-aria-practices-1.1/"><cite>WAI-ARIA Authoring Practicess 1.1</cite></a>. Matt King; James Nurthen; Michael Cooper; Michiel Bijl; Joseph Scheuhammer; Lisa Pappas; Richard Schwerdtfeger et al. W3C. W3C Working Draft. URL: <a href="http://www.w3.org/TR/wai-aria-practices-1.1/">http://www.w3.org/TR/wai-aria-practices-1.1/</a>
 </dd><dt id="bib-AT-SPI">[AT-SPI]</dt><dd><a href="https://developer.gnome.org/libatspi/stable/"><cite>Assistive Technology Service Provider Interface</cite></a>.  The GNOME Project. URL: <a href="https://developer.gnome.org/libatspi/stable/">https://developer.gnome.org/libatspi/stable/</a>
 </dd><dt id="bib-ATK">[ATK]</dt><dd><a href="https://developer.gnome.org/atk/stable/"><cite>ATK - Accessibility Toolkit</cite></a>.  The GNOME Project. URL: <a href="https://developer.gnome.org/atk/stable/">https://developer.gnome.org/atk/stable/</a>
 </dd><dt id="bib-AXAPI">[AXAPI]</dt><dd><a href="https://developer.apple.com/library/content/documentation/Accessibility/Conceptual/AccessibilityMacOSX/index.html#//apple_ref/doc/uid/TP40001078"><cite>Accessibility Programming Guide for OS X</cite></a>.  Apple Corporation. URL: <a href="https://developer.apple.com/library/content/documentation/Accessibility/Conceptual/AccessibilityMacOSX/index.html#//apple_ref/doc/uid/TP40001078">https://developer.apple.com/library/content/documentation/Accessibility/Conceptual/AccessibilityMacOSX/index.html#//apple_ref/doc/uid/TP40001078</a>
@@ -3262,8 +3257,8 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 </dd><dt id="bib-MSAA">[MSAA]</dt><dd><a href="https://msdn.microsoft.com/en-us/library/ms697707.aspx"><cite>Microsoft Active Accessibility (MSAA) 2.0</cite></a>.  Microsoft Corporation. URL: <a href="https://msdn.microsoft.com/en-us/library/ms697707.aspx">https://msdn.microsoft.com/en-us/library/ms697707.aspx</a>
 </dd><dt id="bib-rfc2119">[rfc2119]</dt><dd><a href="https://tools.ietf.org/html/rfc2119"><cite>Key words for use in RFCs to Indicate Requirement Levels</cite></a>. S. Bradner. IETF. March 1997. Best Current Practice. URL: <a href="https://tools.ietf.org/html/rfc2119">https://tools.ietf.org/html/rfc2119</a>
 </dd><dt id="bib-SVG1">[SVG1]</dt><dd><a href="http://www.w3.org/TR/SVG10/"><cite>Scalable Vector Graphics (SVG) 1.0 Specification</cite></a>. John Ferraiolo et al. W3C. W3C Recommendation. URL: <a href="http://www.w3.org/TR/SVG10/">http://www.w3.org/TR/SVG10/</a>
-</dd><dt id="bib-SVG11">[SVG11]</dt><dd><a href="http://www.w3.org/TR/SVG11/"><cite>Scalable Vector Graphics (SVG) 1.1 (Second Edition)</cite></a>. Erik DahlstrÃ¶m; Patrick Dengler; Anthony Grasso; Chris Lilley; Cameron McCormack; Doug Schepers; Jonathan Watt; John Ferraiolo; è—¤æ²¢ æ·³ (FUJISAWA Jun); Dean Jackson et al. W3C. W3C Recommendation. URL: <a href="http://www.w3.org/TR/SVG11/">http://www.w3.org/TR/SVG11/</a>
-</dd><dt id="bib-SVG2">[SVG2]</dt><dd><a href="http://www.w3.org/TR/2015/WD-SVG2-20150915/"><cite>Scalable Vector Graphics (SVG) 2</cite></a>. Nikos Andronikos; Rossen Atanassov; Tavmjong Bah; Amelia Bellamy-Royds; Brian Birtles; Cyril Concolato; Erik DahlstrÃ¶m; Chris Lilley; Cameron McCormack; Doug Schepers; Dirk Schulze; Richard Schwerdtfeger; Satoru Takagi; Jonathan Watt et al. W3C. W3C Working Draft. URL: <a href="http://www.w3.org/TR/2015/WD-SVG2-20150915/">http://www.w3.org/TR/2015/WD-SVG2-20150915/</a>
+</dd><dt id="bib-SVG11">[SVG11]</dt><dd><a href="http://www.w3.org/TR/SVG11/"><cite>Scalable Vector Graphics (SVG) 1.1 (Second Edition)</cite></a>. Erik Dahlström; Patrick Dengler; Anthony Grasso; Chris Lilley; Cameron McCormack; Doug Schepers; Jonathan Watt; John Ferraiolo; 藤沢 淳 (FUJISAWA Jun); Dean Jackson et al. W3C. W3C Recommendation. URL: <a href="http://www.w3.org/TR/SVG11/">http://www.w3.org/TR/SVG11/</a>
+</dd><dt id="bib-SVG2">[SVG2]</dt><dd><a href="http://www.w3.org/TR/2015/WD-SVG2-20150915/"><cite>Scalable Vector Graphics (SVG) 2</cite></a>. Nikos Andronikos; Rossen Atanassov; Tavmjong Bah; Amelia Bellamy-Royds; Brian Birtles; Cyril Concolato; Erik Dahlström; Chris Lilley; Cameron McCormack; Doug Schepers; Dirk Schulze; Richard Schwerdtfeger; Satoru Takagi; Jonathan Watt et al. W3C. W3C Working Draft. URL: <a href="http://www.w3.org/TR/2015/WD-SVG2-20150915/">http://www.w3.org/TR/2015/WD-SVG2-20150915/</a>
 </dd><dt id="bib-UI-AUTOMATION">[UI-AUTOMATION]</dt><dd><a href="https://msdn.microsoft.com/en-us/library/ee684009%28v=vs.85%29.aspx"><cite>UI Automation</cite></a>.  Microsoft Corporation. URL: <a href="https://msdn.microsoft.com/en-us/library/ee684009%28v=vs.85%29.aspx">https://msdn.microsoft.com/en-us/library/ee684009%28v=vs.85%29.aspx</a>
 </dd><dt id="bib-UIA-EXPRESS">[UIA-EXPRESS]</dt><dd><a href="https://msdn.microsoft.com/en-us/library/windows/desktop/dd561898%28v=vs.85%29.aspx"><cite>The IAccessibleEx Interface</cite></a>.  Microsoft Corporation. URL: <a href="https://msdn.microsoft.com/en-us/library/windows/desktop/dd561898%28v=vs.85%29.aspx">https://msdn.microsoft.com/en-us/library/windows/desktop/dd561898%28v=vs.85%29.aspx</a>
 </dd><dt id="bib-WAI-ARIA-10">[WAI-ARIA-10]</dt><dd><a href="http://www.w3.org/TR/wai-aria/"><cite>Accessible Rich Internet Applications (WAI-ARIA) 1.0</cite></a>. James Craig; Michael Cooper et al. W3C. W3C Recommendation. URL: <a href="http://www.w3.org/TR/wai-aria/">http://www.w3.org/TR/wai-aria/</a>
