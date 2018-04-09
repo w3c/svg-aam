@@ -1,4 +1,4 @@
-<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US"><head><meta charset="utf-8"><meta name="generator" content="ReSpec 20.2.2"><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"><style>/* --- ISSUES/NOTES --- */
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US"><head><meta charset="utf-8"><meta name="generator" content="ReSpec 20.7.1"><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"><style>/* --- ISSUES/NOTES --- */
 div.issue-title, div.note-title , div.ednote-title, div.warning-title {
     padding-right:  1em;
     min-width: 7.5em;
@@ -61,6 +61,28 @@ li.task-list-item {
 input.task-list-item-checkbox {
     margin: 0 0.35em 0.25em -1.6em;
     vertical-align: middle;
+}
+
+.issue a.respec-gh-label {
+  padding: 5px;
+  margin: 0 2px 0 2px;
+  font-size: 10px;
+  text-transform: none;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 4px;
+  position: relative;
+  bottom: 2px;
+}
+
+.issue a.respec-label-dark {
+  color: #fff;
+  background-color: #000;
+}
+
+.issue a.respec-label-light {
+  color: #000;
+  background-color: #fff;
 }
 </style><style>/* --- PERMALINKS --- */
 
@@ -351,10 +373,9 @@ var mappingTableLabels = {
     "SVG Working Group"
   ],
   "wgURI": [
-    "https://www.w3.org/Graphics/SVG/WG/"
+    "https://www.w3.org/Graphics/SVG/WG/wiki/Main_Page"
   ],
   "wgPatentURI": [
-    "https://www.w3.org/2004/01/pp-impl/83726/status",
     "https://www.w3.org/2004/01/pp-impl/19480/status"
   ],
   "tocIntroductory": true,
@@ -428,9 +449,9 @@ var mappingTableLabels = {
   "preProcess": [
     null
   ],
-  "publishDate": "2018-03-27",
-  "publishISODate": "2018-03-27T00:00:00.000Z",
-  "generatedSubtitle": "Editor's Draft 27 March 2018"
+  "publishDate": "2018-04-09",
+  "publishISODate": "2018-04-09T00:00:00.000Z",
+  "generatedSubtitle": "Editor's Draft 09 April 2018"
 }</script><meta name="description" content="SVG Accessibility API Mappings (SVG-AAM) defines how
     user agents map
     Scalable Vector Graphics (SVG) [SVG2] markup
@@ -444,7 +465,7 @@ var mappingTableLabels = {
   </a>
   <h1 id="title" class="title p-name"><abbr title="Scalable Vector Graphics">SVG</abbr> Accessibility <abbr title="Application Programming Interfaces">API</abbr> Mappings</h1>
   
-  <h2 id="w3c-editor-s-draft-27-march-2018"><abbr title="World Wide Web Consortium">W3C</abbr> Editor's Draft <time class="dt-published" datetime="2018-03-27">27 March 2018</time></h2>
+  <h2 id="w3c-editor-s-draft-09-april-2018"><abbr title="World Wide Web Consortium">W3C</abbr> Editor's Draft <time class="dt-published" datetime="2018-04-09">09 April 2018</time></h2>
   <dl>
     <dt>This version:</dt><dd><a class="u-url" href="https://w3c.github.io/svg-aam/">https://w3c.github.io/svg-aam/</a></dd><dt>Latest published version:</dt><dd><a href="https://www.w3.org/TR/svg-aam-1.0/">https://www.w3.org/TR/svg-aam-1.0/</a></dd>
     <dt>Latest editor's draft:</dt><dd><a href="https://w3c.github.io/svg-aam/">https://w3c.github.io/svg-aam/</a></dd>
@@ -502,7 +523,7 @@ var mappingTableLabels = {
     including charts, graphs, and other drawings.
     It does this by extending the
     <cite><a href="http://www.w3.org/TR/core-aam-1.1/">Core Accessibility <abbr title="Application Programming Interfaces">API</abbr> Mappings 1.1</a></cite> (CORE-AAM) [<cite><a class="bibref" href="#bib-CORE-AAM">CORE-AAM</a></cite>]
-    and the <cite><a href="http://www.w3.org/TR/accname-aam-1.1/">Accessible Name and Description: Computation and <abbr title="Application Programming Interfaces">API</abbr> Mappings 1.1</a></cite> (ACCNAME-AAM) [<cite><a class="bibref" href="#bib-ACCNAME-AAM">ACCNAME-AAM</a></cite>] specifications
+    and the <cite><a href="http://www.w3.org/TR/accname-1.1/">Accessible Name and Description: Computation and <abbr title="Application Programming Interfaces">API</abbr> Mappings 1.1</a></cite> (ACCNAME-AAM) [<cite><a class="bibref" href="#bib-ACCNAME-AAM">ACCNAME-AAM</a></cite>] specifications
     for user agents.
     It leverages those core mappings and provides <abbr title="Scalable Vector Graphics">SVG</abbr>-specific guidance
     to define how the <abbr title="Scalable Vector Graphics">SVG</abbr> user agent must respond to keyboard focus
@@ -525,7 +546,7 @@ var mappingTableLabels = {
       This document is a work in progress.
     </p><p>
       To provide feedback, please <a href="https://github.com/w3c/svg-aam/issues/">create or comment on an issue</a> in the <abbr title="World Wide Web Consortium">W3C</abbr> <abbr title="Scalable Vector Graphics">SVG</abbr> Accessibility <abbr title="Application Programming Interfaces">API</abbr> Mappings GitHub repository.
-      If this is not feasible, send email to <a href="mailto:www-svg@w3.org?subject=[SVG%20AAM%20public%20comment">www-svg@w3.org</a> (<a href="https://lists.w3.org/Archives/Public/www-svg/">email archive</a>).
+      If this is not feasible, send email to <a href="mailto:www-svg@w3.org?subject=SVG%20AAM%20public%20comment">www-svg@w3.org</a> (<a href="https://lists.w3.org/Archives/Public/www-svg/">email archive</a>).
       In-progress updates to the document may be viewed in the <a href="https://w3c.github.io/svg-aam/">publicly visible editors' draft</a>.
     </p><p>
         Particularly problematic open issues
@@ -546,12 +567,12 @@ var mappingTableLabels = {
     </p><p>
       This document was initially developed jointly by
       the <a href="https://www.w3.org/WAI/ARIA/">Accessible Rich Internet Applications Working Group</a>
-      and the <a href="https://www.w3.org/Graphics/SVG/WG/"><abbr title="Scalable Vector Graphics">SVG</abbr> Working Group</a>,
+      and the <a href="https://www.w3.org/Graphics/SVG/WG/wiki/Main_Page"><abbr title="Scalable Vector Graphics">SVG</abbr> Working Group</a>,
       through the <a href="http://www.w3.org/WAI/PF/svg-a11y-tf/"><abbr title="Scalable Vector Graphics">SVG</abbr> Accessibility Task Force</a>.
       It continues to be produced in coordination with other specifications
       developed by the ARIA Working Group.
     </p><p>
-          This document was published by the <a href="https://www.w3.org/Graphics/SVG/WG/"><abbr title="Scalable Vector Graphics">SVG</abbr> Working Group</a> as an Editor's Draft.
+          This document was published by the <a href="https://www.w3.org/Graphics/SVG/WG/wiki/Main_Page"><abbr title="Scalable Vector Graphics">SVG</abbr> Working Group</a> as an Editor's Draft.
           
           
           
@@ -571,7 +592,7 @@ var mappingTableLabels = {
           
           
           
-              <abbr title="World Wide Web Consortium">W3C</abbr> maintains a <a rel="disclosure" href="https://www.w3.org/2004/01/pp-impl/83726/status,https://www.w3.org/2004/01/pp-impl/19480/status">public list of any patent
+              <abbr title="World Wide Web Consortium">W3C</abbr> maintains a <a rel="disclosure" href="https://www.w3.org/2004/01/pp-impl/19480/status">public list of any patent
               disclosures</a>
             made in connection with the deliverables of
             the group; that page also includes
@@ -724,7 +745,7 @@ var mappingTableLabels = {
       using platform accessibility <abbr title="Application Programming Interfaces">APIs</abbr>.
     </li>
     <li>
-      <cite><a href="http://www.w3.org/TR/graphics-aam-1.0">Graphics Accessibility <abbr title="Application Programming Interfaces">API</abbr> Mappings</a></cite>[<cite><a class="bibref" href="#bib-GRAPHICS-AAM">GRAPHICS-AAM</a></cite>], a planned <abbr title="World Wide Web Consortium">W3C</abbr> recommendation,
+      <cite><a href="http://www.w3.org/TR/graphics-aam-1.0/">Graphics Accessibility <abbr title="Application Programming Interfaces">API</abbr> Mappings</a></cite>[<cite><a class="bibref" href="#bib-GRAPHICS-AAM">GRAPHICS-AAM</a></cite>], a planned <abbr title="World Wide Web Consortium">W3C</abbr> recommendation,
       which expresses how <cite><a href="http://www.w3.org/TR/graphics-aria-1.0/"><abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> Graphics Module</a></cite> [<cite><a class="bibref" href="#bib-GRAPHICS-ARIA">GRAPHICS-ARIA</a></cite>]
       <a href="#dfn-role" class="termref">roles</a>, <a href="#dfn-state" class="termref">states</a>, and <a href="#dfn-property" class="termref">properties</a>
       should be supported in user agents
@@ -732,7 +753,7 @@ var mappingTableLabels = {
     </li>
 
     <li>
-      <cite><a href="http://www.w3.org/TR/accname-aam-1.1/">Accessible Name and Description: Computation and <abbr title="Application Programming Interfaces">API</abbr> Mappings 1.1</a></cite> [<cite><a class="bibref" href="#bib-ACCNAME-AAM">ACCNAME-AAM</a></cite>],
+      <cite><a href="http://www.w3.org/TR/accname-1.1/">Accessible Name and Description: Computation and <abbr title="Application Programming Interfaces">API</abbr> Mappings 1.1</a></cite> [<cite><a class="bibref" href="#bib-ACCNAME-AAM">ACCNAME-AAM</a></cite>],
       which outlines the specific steps user agents should follow
       in order to identify accessible names (labels) and descriptions (alternative text)
       for elements that are exposed to assistive technologies.
@@ -818,7 +839,7 @@ var mappingTableLabels = {
     </p>
     <ul>
       <li>
-      <cite><a href="https://msdn.microsoft.com/en-us/library/ms697707.aspx">Microsoft Active Accessibility 2.0</a></cite> [<cite><a class="bibref" href="#bib-MSAA">MSAA</a></cite>] with <cite><a href="http://www.linuxfoundation.org/collaborate/workgroups/accessibility/iaccessible2">IAccessible2 1.3</a></cite> [<cite><a class="bibref" href="#bib-IAccessible2">IAccessible2</a></cite>]
+      <cite><a href="https://msdn.microsoft.com/en-us/library/ms697707.aspx">Microsoft Active Accessibility 2.0</a></cite> [<cite><a class="bibref" href="#bib-MSAA">MSAA</a></cite>] with <cite><a href="https://wiki.linuxfoundation.org/accessibility/iaccessible2/start">IAccessible2 1.3</a></cite> [<cite><a class="bibref" href="#bib-IAccessible2">IAccessible2</a></cite>]
       </li>
       <li>
         <cite><a href="https://msdn.microsoft.com/en-us/library/ee684013%28VS.85%29.aspx">User Interface Automation</a></cite> [<cite><a class="bibref" href="#bib-UI-AUTOMATION">UI-AUTOMATION</a></cite>]
@@ -827,7 +848,7 @@ var mappingTableLabels = {
         <cite><a href="https://developer.gnome.org/atk/2.10/">Linux Accessibility Toolkit 2.10.0</a></cite> [<cite><a class="bibref" href="#bib-ATK">ATK</a></cite>] and <cite><a href="https://developer.gnome.org/libatspi/2.10/">Assistive Technology - Service Provider Interface 2.1</a></cite> [<cite><a class="bibref" href="#bib-AT-SPI">AT-SPI</a></cite>]
       </li>
       <li>
-        <cite><a href="https://developer.apple.com/library/mac/documentation/Cocoa/Reference/ApplicationKit/Protocols/NSAccessibility_Protocol/index.html">Mac <abbr title="OS Ten">OS X</abbr> Accessibility Protocol Mac OS 10.10</a></cite> [<cite><a class="bibref" href="#bib-AXAPI">AXAPI</a></cite>]
+        <cite><a href="https://developer.apple.com/documentation/appkit/accessibility/nsaccessibility">Mac <abbr title="OS Ten">OS X</abbr> Accessibility Protocol Mac OS 10.10</a></cite> [<cite><a class="bibref" href="#bib-AXAPI">AXAPI</a></cite>]
       </li>
     </ul>
 		<p>
@@ -1240,7 +1261,7 @@ var mappingTableLabels = {
         any element that is not rendered
         because its computed style includes
         a value of <code>none</code>
-        for the <a href="https://svgwg.org/svg2-draft/painting.html#VisibilityControl"><code>display</code></a> property.
+        for the <a href="https://svgwg.org/svg2-draft/render.html#VisibilityControl"><code>display</code></a> property.
       </p>
       <p>
         Other style properties can prevent an element,
@@ -1255,14 +1276,14 @@ var mappingTableLabels = {
         For the purpose of <abbr title="Scalable Vector Graphics">SVG</abbr>,
         an element is considered <a class="termref internalDFN" href="#dfn-hidden" data-link-type="dfn">hidden</a>
         if it is <em>neither</em> visible,
-        according to the computed value of the <a href="https://svgwg.org/svg2-draft/painting.html#VisibilityControl"><code>visibility</code></a> property,
+        according to the computed value of the <a href="https://svgwg.org/svg2-draft/render.html#VisibilityControl"><code>visibility</code></a> property,
         nor interactive to pointer users.
         according to the <a href="https://svgwg.org/svg2-draft/interact.html#PointerEventsProperty"><code>pointer-events</code></a> property.
         User agents <strong class="rfc2119"><em class="rfc2119" title="SHOULD NOT">SHOULD NOT</em></strong>
         expose to accessibility <abbr title="application programming interfaces">APIs</abbr>
         any element that is hidden in this sense,
         <em>unless</em> the author explicitly overrides the hiding
-        by setting the <pref>aria-hidden</pref> attribute to <code>false</code>.
+        by setting the <a class="property-reference" href="https://w3c.github.io/aria/#aria-hidden"><code>aria-hidden</code></a> attribute to <code>false</code>.
       </p>
       <p>
         In the case of container elements (such as <code>g</code> or <code>svg</code>),
@@ -1353,7 +1374,7 @@ var mappingTableLabels = {
           depending on the value of the <code>pointer-events</code> property.
         </p>
       </div></div>
-      <div class="issue" id="issue-6"><div role="heading" class="issue-title marker" id="h-issue" aria-level="5"><a href="https://github.com/w3c/svg-aam/issues/6"><span>Issue 6</span></a><span style="text-transform: none">: Should structured descriptions be exposed in the accessibility tree?</span></div><div class="">
+      <div class="issue" id="issue-6"><div role="heading" class="issue-title marker" id="h-issue" aria-level="5"><a href="https://github.com/w3c/svg-aam/issues/6"><span>Issue 6</span></a><span style="text-transform: none">: Should structured descriptions be exposed in the accessibility tree?<a class="respec-gh-label respec-label-light" href="https://github.com/w3c/svg-aam/issues/?q=is%3Aissue+is%3Aopen+label%3A%22Needs+ARIA+WG+Input%22" style="background-color: rgb(251, 202, 4);">Needs ARIA WG Input</a><a class="respec-gh-label respec-label-light" href="https://github.com/w3c/svg-aam/issues/?q=is%3Aissue+is%3Aopen+label%3A%22Needs+Implementer+Input%22" style="background-color: rgb(251, 202, 4);">Needs Implementer Input</a></span></div><div class="">
         <p><a href="https://github.com/w3c/svg-aam/issues/6">GitHub Issue #6</a></p>
         <p>
         The strict exclusion of non-rendered metadata elements, including <code>desc</code>,
@@ -2262,7 +2283,7 @@ var mappingTableLabels = {
                       <span class="type">Interfaces: </span>
                       <code>AtkText</code>; <code>AtkHypertext</code>
                       </dd>
-        <dt><a href="https://developer.apple.com/library/mac/documentation/AppKit/Reference/NSAccessibility_Protocol_Reference">AX</a></dt>
+        <dt><a href="https://developer.apple.com/documentation/appkit/nsaccessibility">AX</a></dt>
         <dd>
                           <span class="type">AXRole: </span><code>AXGroup</code>
                     </dd>
@@ -2409,7 +2430,7 @@ var mappingTableLabels = {
 </tbody>
 </table>
 </div>
-<div class="issue" id="issue-2"><div role="heading" class="issue-title marker" id="h-issue-2" aria-level="4"><a href="https://github.com/w3c/svg-aam/issues/2"><span>Issue 2</span></a><span style="text-transform: none">: textPath and tspan need platform-specific mappings</span></div><div id="textpath-tspan-mappings-issue" class="">
+<div class="issue" id="issue-2"><div role="heading" class="issue-title marker" id="h-issue-2" aria-level="4"><a href="https://github.com/w3c/svg-aam/issues/2"><span>Issue 2</span></a><span style="text-transform: none">: textPath and tspan need platform-specific mappings<a class="respec-gh-label respec-label-light" href="https://github.com/w3c/svg-aam/issues/?q=is%3Aissue+is%3Aopen+label%3A%22Needs+Implementer+Input%22" style="background-color: rgb(251, 202, 4);">Needs Implementer Input</a></span></div><div id="textpath-tspan-mappings-issue" class="">
     <p><a href="https://github.com/w3c/svg-aam/issues/2">GitHub Issue #2</a></p>
     <p>
       The use of the group role for
@@ -2716,7 +2737,7 @@ var mappingTableLabels = {
         </li>
       </ul>
 
-    <div class="issue" id="issue-7"><div role="heading" class="issue-title marker" id="h-issue-4" aria-level="4"><a href="https://github.com/w3c/svg-aam/issues/7"><span>Issue 7</span></a><span style="text-transform: none">: Harmonize use-element behavior with other shadow DOM behavior</span></div><div class="">
+    <div class="issue" id="issue-7"><div role="heading" class="issue-title marker" id="h-issue-4" aria-level="4"><a href="https://github.com/w3c/svg-aam/issues/7"><span>Issue 7</span></a><span style="text-transform: none">: Harmonize use-element behavior with other shadow DOM behavior<a class="respec-gh-label respec-label-light" href="https://github.com/w3c/svg-aam/issues/?q=is%3Aissue+is%3Aopen+label%3A%22Needs+ARIA+WG+Input%22" style="background-color: rgb(251, 202, 4);">Needs ARIA WG Input</a><a class="respec-gh-label respec-label-light" href="https://github.com/w3c/svg-aam/issues/?q=is%3Aissue+is%3Aopen+label%3A%22Needs+Implementer+Input%22" style="background-color: rgb(251, 202, 4);">Needs Implementer Input</a></span></div><div class="">
       <p><a href="https://github.com/w3c/svg-aam/issues/7">GitHub Issue #7</a></p>
       <p>
         The editors will be working to harmonize these guidelines
@@ -2783,7 +2804,7 @@ var mappingTableLabels = {
         as the deletion of existing nodes followed by the insertion of modified nodes.
       </p>
 
-    <div class="issue" id="issue-8"><div role="heading" class="issue-title marker" id="h-issue-5" aria-level="4"><a href="https://github.com/w3c/svg-aam/issues/8"><span>Issue 8</span></a><span style="text-transform: none">: Exposing SVG view behavior and viewTarget to accessibility APIs</span></div><div class="">
+    <div class="issue" id="issue-8"><div role="heading" class="issue-title marker" id="h-issue-5" aria-level="4"><a href="https://github.com/w3c/svg-aam/issues/8"><span>Issue 8</span></a><span style="text-transform: none">: Exposing SVG view behavior and viewTarget to accessibility APIs<a class="respec-gh-label respec-label-light" href="https://github.com/w3c/svg-aam/issues/?q=is%3Aissue+is%3Aopen+label%3A%22Needs+Implementer+Input%22" style="background-color: rgb(251, 202, 4);">Needs Implementer Input</a></span></div><div class="">
       <p><a href="https://github.com/w3c/svg-aam/issues/8">GitHub Issue #8</a></p>
       <p>
         <abbr title="Scalable Vector Graphics">SVG</abbr> Views provide a functionality unique to <abbr title="Scalable Vector Graphics">SVG</abbr>,
@@ -2956,12 +2977,13 @@ var mappingTableLabels = {
   <h3 id="a-2-issue-summary"><span class="secno">A.2 </span>Issue Summary&nbsp;<span class="permalink"><a href="#issue-summary" aria-label="Permalink for A.2 Issue Summary" title="Permalink for A.2 Issue Summary"><span>§</span></a></span></h3><ul><li><a href="#issue-6">Issue 6</a><span style="text-transform: none">: Should structured descriptions be exposed in the accessibility tree?</span></li><li><a href="#issue-2">Issue 2</a><span style="text-transform: none">: textPath and tspan need platform-specific mappings</span></li><li><a href="#issue-7">Issue 7</a><span style="text-transform: none">: Harmonize use-element behavior with other shadow DOM behavior</span></li><li><a href="#issue-8">Issue 8</a><span style="text-transform: none">: Exposing SVG view behavior and viewTarget to accessibility APIs</span></li></ul></section>
 
 </section>
+<p role="navigation" id="back-to-top"><a href="#toc"><abbr title="Back to top">↑</abbr></a></p>
 
 
 <section id="references" class="appendix"><!--OddPage--><h2 id="b-references"><span class="secno">B. </span>References&nbsp;<span class="permalink"><a href="#references" aria-label="Permalink for B. References" title="Permalink for B. References"><span>§</span></a></span></h2><section id="normative-references"><h3 id="b-1-normative-references"><span class="secno">B.1 </span>Normative references&nbsp;<span class="permalink"><a href="#normative-references" aria-label="Permalink for B.1 Normative references" title="Permalink for B.1 Normative references"><span>§</span></a></span></h3><dl class="bibliography"><dt id="bib-ACCNAME-AAM">[ACCNAME-AAM]</dt><dd><a href="https://www.w3.org/TR/accname-1.1/"><cite>Accessible Name and Description Computation 1.1</cite></a>. Joanmarie Diggs; Michael Cooper; Richard Schwerdtfeger; Joseph Scheuhammer; James Craig; Andi Snow-Weaver; Aaron Leventhal. W3C. 20 March 2018. W3C Working Draft. URL: <a href="https://www.w3.org/TR/accname-1.1/">https://www.w3.org/TR/accname-1.1/</a>
 </dd><dt id="bib-CORE-AAM">[CORE-AAM]</dt><dd><a href="https://www.w3.org/TR/core-aam-1.1/"><cite>Core Accessibility API Mappings 1.1</cite></a>. Joanmarie Diggs; Joseph Scheuhammer; Richard Schwerdtfeger; Michael Cooper; Andi Snow-Weaver; Aaron Leventhal. W3C. 14 December 2017. W3C Recommendation. URL: <a href="https://www.w3.org/TR/core-aam-1.1/">https://www.w3.org/TR/core-aam-1.1/</a>
 </dd><dt id="bib-DOM">[DOM]</dt><dd><a href="https://dom.spec.whatwg.org/"><cite>DOM Standard</cite></a>. Anne van Kesteren. WHATWG. Living Standard. URL: <a href="https://dom.spec.whatwg.org/">https://dom.spec.whatwg.org/</a>
-</dd><dt id="bib-GRAPHICS-AAM">[GRAPHICS-AAM]</dt><dd><a href="https://www.w3.org/TR/graphics-aam-1.0/"><cite>Graphics Accessibility API Mappings</cite></a>. Amelia Bellamy-Royds; Joanmarie Diggs; Michael Cooper; Fred Esch; Richard Schwerdtfeger; Doug Schepers. W3C. 2 February 2018. W3C Working Draft. URL: <a href="https://www.w3.org/TR/graphics-aam-1.0/">https://www.w3.org/TR/graphics-aam-1.0/</a>
+</dd><dt id="bib-GRAPHICS-AAM">[GRAPHICS-AAM]</dt><dd><a href="https://www.w3.org/TR/graphics-aam-1.0/"><cite>Graphics Accessibility API Mappings</cite></a>. Amelia Bellamy-Royds; Joanmarie Diggs; Michael Cooper; Fred Esch; Richard Schwerdtfeger. W3C. 29 March 2018. W3C Candidate Recommendation. URL: <a href="https://www.w3.org/TR/graphics-aam-1.0/">https://www.w3.org/TR/graphics-aam-1.0/</a>
 </dd><dt id="bib-HTML-AAM">[HTML-AAM]</dt><dd><a href="https://www.w3.org/TR/html-aam-1.0/"><cite>HTML Accessibility API Mappings 1.0</cite></a>. Steve Faulkner; Jason Kiss; Alexander Surkov; Bogdan Brinza; Cynthia Shelly. W3C. 7 March 2018. W3C Working Draft. URL: <a href="https://www.w3.org/TR/html-aam-1.0/">https://www.w3.org/TR/html-aam-1.0/</a>
 </dd><dt id="bib-SVG2">[SVG2]</dt><dd><a href="https://www.w3.org/TR/SVG2/"><cite>Scalable Vector Graphics (SVG) 2</cite></a>. Nikos Andronikos; Rossen Atanassov; Tavmjong Bah; Amelia Bellamy-Royds; Brian Birtles; Bogdan Brinza; Cyril Concolato; Erik Dahlström; Chris Lilley; Cameron McCormack; Doug Schepers; Dirk Schulze; Richard Schwerdtfeger; Satoru Takagi; Jonathan Watt. W3C. 15 September 2016. W3C Candidate Recommendation. URL: <a href="https://www.w3.org/TR/SVG2/">https://www.w3.org/TR/SVG2/</a>
 </dd><dt id="bib-WAI-ARIA">[WAI-ARIA]</dt><dd><a href="https://www.w3.org/TR/wai-aria-1.1/"><cite>Accessible Rich Internet Applications (WAI-ARIA) 1.1</cite></a>. Joanmarie Diggs; Shane McCarron; Michael Cooper; Richard Schwerdtfeger; James Craig. W3C. 14 December 2017. W3C Recommendation. URL: <a href="https://www.w3.org/TR/wai-aria-1.1/">https://www.w3.org/TR/wai-aria-1.1/</a>
@@ -2970,7 +2992,7 @@ var mappingTableLabels = {
 </dd><dt id="bib-ATK">[ATK]</dt><dd><a href="https://developer.gnome.org/atk/stable/"><cite>ATK - Accessibility Toolkit</cite></a>.  The GNOME Project. URL: <a href="https://developer.gnome.org/atk/stable/">https://developer.gnome.org/atk/stable/</a>
 </dd><dt id="bib-AXAPI">[AXAPI]</dt><dd><a href="https://developer.apple.com/documentation/appkit/nsaccessibility"><cite>The NSAccessibility Protocol for macOS</cite></a>.  Apple, Inc. URL: <a href="https://developer.apple.com/documentation/appkit/nsaccessibility">https://developer.apple.com/documentation/appkit/nsaccessibility</a>
 </dd><dt id="bib-CSS-CASCADE-3">[CSS-CASCADE-3]</dt><dd><a href="https://www.w3.org/TR/css-cascade-3/"><cite>CSS Cascading and Inheritance Level 3</cite></a>. Elika Etemad; Tab Atkins Jr.. W3C. 19 May 2016. W3C Candidate Recommendation. URL: <a href="https://www.w3.org/TR/css-cascade-3/">https://www.w3.org/TR/css-cascade-3/</a>
-</dd><dt id="bib-GRAPHICS-ARIA">[GRAPHICS-ARIA]</dt><dd><a href="https://www.w3.org/TR/graphics-aria-1.0/"><cite>WAI-ARIA Graphics Module</cite></a>. Amelia Bellamy-Royds; Joanmarie Diggs; Michael Cooper; Fred Esch; Richard Schwerdtfeger; Doug Schepers. W3C. 2 February 2018. W3C Working Draft. URL: <a href="https://www.w3.org/TR/graphics-aria-1.0/">https://www.w3.org/TR/graphics-aria-1.0/</a>
+</dd><dt id="bib-GRAPHICS-ARIA">[GRAPHICS-ARIA]</dt><dd><a href="https://www.w3.org/TR/graphics-aria-1.0/"><cite>WAI-ARIA Graphics Module</cite></a>. Amelia Bellamy-Royds; Joanmarie Diggs; Michael Cooper; Fred Esch; Richard Schwerdtfeger. W3C. 29 March 2018. W3C Candidate Recommendation. URL: <a href="https://www.w3.org/TR/graphics-aria-1.0/">https://www.w3.org/TR/graphics-aria-1.0/</a>
 </dd><dt id="bib-IAccessible2">[IAccessible2]</dt><dd><a href="https://www.linuxfoundation.org/collaborate/workgroups/accessibility/iaccessible2"><cite>IAccessible2</cite></a>.  Linux Foundation. URL: <a href="https://www.linuxfoundation.org/collaborate/workgroups/accessibility/iaccessible2">https://www.linuxfoundation.org/collaborate/workgroups/accessibility/iaccessible2</a>
 </dd><dt id="bib-MSAA">[MSAA]</dt><dd><a href="https://msdn.microsoft.com/en-us/library/ms697707.aspx"><cite>Microsoft Active Accessibility (MSAA) 2.0</cite></a>.  Microsoft Corporation. URL: <a href="https://msdn.microsoft.com/en-us/library/ms697707.aspx">https://msdn.microsoft.com/en-us/library/ms697707.aspx</a>
 </dd><dt id="bib-rfc2119">[rfc2119]</dt><dd><a href="https://tools.ietf.org/html/rfc2119"><cite>Key words for use in RFCs to Indicate Requirement Levels</cite></a>. S. Bradner. IETF. March 1997. Best Current Practice. URL: <a href="https://tools.ietf.org/html/rfc2119">https://tools.ietf.org/html/rfc2119</a>
