@@ -865,7 +865,6 @@ var mappingTableLabels = {
         </p>
       </div>
       <div class="issue" title="Should structured descriptions be exposed in the accessibility tree?" data-number="6">
-        <p><a href="https://github.com/w3c/svg-aam/issues/6">GitHub Issue #6</a></p>
         <p>
         The strict exclusion of non-rendered metadata elements, including <code>desc</code>,
         from the accessibility tree
@@ -1096,7 +1095,6 @@ var mappingTableLabels = {
       </p>
     </section>
   </section>
-  </section>
 
 	<section id="mapping_conflicts">
 		<h3>Conflicts between native markup semantics and <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr></h3>
@@ -1129,6 +1127,7 @@ var mappingTableLabels = {
       SVG user agents <span class="rfc2119">MUST</span> conform to <a class="core-mapping" href="#mapping_nodirect">Exposing attributes that do not directly map to accessibility <abbr title="application programming interface">API</abbr> properties</a> in the Core Accessibility API Mappings [[!CORE-AAM]].
     </p>
 	</section>
+  </section>
 
 	<section id="mapping_role">
 		<h2>Role mapping</h2>
@@ -1922,7 +1921,6 @@ var mappingTableLabels = {
 </div>
 <div id="textpath-tspan-mappings-issue" class="issue" data-number="2"
          title="textPath and tspan need platform-specific mappings">
-    <p><a href="https://github.com/w3c/svg-aam/issues/2">GitHub Issue #2</a></p>
     <p>
       The use of the group role for
       <a href="#role-map-textpath"><code>textPath</code></a>
@@ -1941,6 +1939,10 @@ var mappingTableLabels = {
       In particular, for ATK, the <code>ATK_ROLE_STATIC</code> role
       is probably more appropriate than the usual mappings for <code>group</code>.
     </p>
+    <p>
+      Suggestions for improved mappings would be welcome,
+      in <a href="https://github.com/w3c/svg-aam/issues/2">GitHub Issue #2</a>)
+  </p>
 </div>
       </section>
   </section>
@@ -2230,7 +2232,6 @@ var mappingTableLabels = {
 
     <div class="issue" data-number="7"
          title="Harmonize use-element behavior with other shadow DOM behavior">
-      <p><a href="https://github.com/w3c/svg-aam/issues/7">GitHub Issue #7</a></p>
       <p>
         The editors will be working to harmonize these guidelines
         with general rules for WAI-ARIA processing of shadow tree elements,
@@ -2298,7 +2299,6 @@ var mappingTableLabels = {
 
     <div class="issue" data-number="8"
          title="Exposing SVG view behavior and viewTarget to accessibility APIs">
-      <p><a href="https://github.com/w3c/svg-aam/issues/8">GitHub Issue #8</a></p>
       <p>
         SVG Views provide a functionality unique to SVG,
         with no direct equivalent in HTML documents.
@@ -2415,6 +2415,21 @@ var mappingTableLabels = {
     SVG user agents <span class="rfc2119">MUST</span> conform to the
     <a href="#document-handling" class="core-mapping">Special Document Handling Procedures</a>
     in the Core Accessibility API Mappings [[!CORE-AAM]].
+  </p>
+</section>
+  
+<section id="security-privacy">
+  <h2>Security and Privacy Considerations</h2>
+  <p>
+    Implementation of this specification is not expected to add
+    any new security or privacy considerations to the web platform,
+    relative to implementation of SVG ([[SVG2]]) and WAI-ARIA ([[WAI-ARIA]]) separately.
+  </p>
+  <p class="ednote">
+    If you believe there is a potential new security or privacy risk
+    created by this specification,
+    please <a href="https://github.com/w3c/svg-aam/issues">raise an issue</a>
+    in the specification's GitHub repository.
   </p>
 </section>
 
