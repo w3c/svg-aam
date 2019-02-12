@@ -1,4 +1,4 @@
-<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US"><head><meta charset="utf-8"><meta name="generator" content="ReSpec 24.2.3"><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"><style>/* --- ISSUES/NOTES --- */
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US"><head><meta charset="utf-8"><meta name="generator" content="ReSpec 24.3.1"><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"><style>/* --- ISSUES/NOTES --- */
 div.issue-title, div.note-title , div.ednote-title, div.warning-title {
     padding-right:  1em;
     min-width: 7.5em;
@@ -28,10 +28,6 @@ div.issue, div.note , div.ednote,  div.warning {
 }
 span.warning { padding: .1em .5em .15em; }
 
-.issue {
-    border-color: #e05252;
-    background: #fbe9e9;
-}
 .issue.closed span.issue-number {
     text-decoration: line-through;
 }
@@ -492,9 +488,9 @@ var mappingTableLabels = {
   "preProcess": [
     null
   ],
-  "publishDate": "2019-01-24",
-  "publishISODate": "2019-01-24T00:00:00.000Z",
-  "generatedSubtitle": "Editor's Draft 24 January 2019"
+  "publishDate": "2019-02-12",
+  "publishISODate": "2019-02-12T00:00:00.000Z",
+  "generatedSubtitle": "Editor's Draft 12 February 2019"
 }</script><meta name="description" content="SVG Accessibility API Mappings (SVG-AAM) defines how
     user agents map
     Scalable Vector Graphics (SVG) [SVG2] markup
@@ -507,14 +503,14 @@ var mappingTableLabels = {
       
       <h2>
         <abbr title="World Wide Web Consortium">W3C</abbr> Editor's Draft
-        <time class="dt-published" datetime="2019-01-24">24 January 2019</time>
+        <time class="dt-published" datetime="2019-02-12">12 February 2019</time>
       </h2>
       <dl>
         <dt>This version:</dt><dd>
-                  <a class="u-url" href="https://w3c.github.io/svg-aam/">https://w3c.github.io/svg-aam/</a>
-                </dd><dt>Latest published version:</dt><dd>
-                  <a href="https://www.w3.org/TR/svg-aam-1.0/">https://www.w3.org/TR/svg-aam-1.0/</a>
-                </dd>
+                <a class="u-url" href="https://w3c.github.io/svg-aam/">https://w3c.github.io/svg-aam/</a>
+              </dd><dt>Latest published version:</dt><dd>
+                <a href="https://www.w3.org/TR/svg-aam-1.0/">https://www.w3.org/TR/svg-aam-1.0/</a>
+              </dd>
         <dt>Latest editor's draft:</dt><dd><a href="https://w3c.github.io/svg-aam/">https://w3c.github.io/svg-aam/</a></dd>
         
         
@@ -530,8 +526,8 @@ var mappingTableLabels = {
           </dd>
         
         <dt>
-                  Authors:
-                </dt><dd class="p-author h-card vcard" data-editor-id="75809"><a class="ed_mailto u-email email p-name" href="mailto:amelia.bellamy.royds@gmail.com">Amelia Bellamy-Royds</a>
+                Authors:
+              </dt><dd class="p-author h-card vcard" data-editor-id="75809"><a class="ed_mailto u-email email p-name" href="mailto:amelia.bellamy.royds@gmail.com">Amelia Bellamy-Royds</a>
             (Invited Expert)
           </dd><dd class="p-author h-card vcard" data-editor-id="44477"><a class="ed_mailto u-email email p-name" href="mailto:w3c@ipouncey.co.uk">Ian Pouncey</a>
             (The Paciello Group, LLC)
@@ -637,47 +633,45 @@ var mappingTableLabels = {
       developed by the ARIA Working Group.
     </p>
 <p>
-                              This document was published by the <a href="https://www.w3.org/Graphics/SVG/WG/wiki/Main_Page"><abbr title="Scalable Vector Graphics">SVG</abbr> Working Group</a> as
-                              an Editor's Draft.
-                              
-                            </p><p>
+                        This document was published by the <a href="https://www.w3.org/Graphics/SVG/WG/wiki/Main_Page"><abbr title="Scalable Vector Graphics">SVG</abbr> Working Group</a> as
+                        an Editor's Draft.
+                        
+                      </p><p>
       <a href="https://github.com/w3c/svg-aam/issues/">GitHub Issues</a> are preferred for
-              discussion of this specification.
-            
+            discussion of this specification.
+          
       
     </p><p>
-                              Publication as an Editor's Draft
-                              does not imply endorsement by the <abbr title="World Wide Web Consortium">W3C</abbr> Membership.
-                              This is a draft document and may be updated,
-                              replaced or obsoleted by other documents at any
-                              time. It is inappropriate to cite this document as
-                              other than work in progress.
-                            </p><p>
+                        Publication as an Editor's Draft does not
+                        imply endorsement by the <abbr title="World Wide Web Consortium">W3C</abbr> Membership. This is a draft
+                        document and may be updated, replaced or obsoleted by
+                        other documents at any time. It is inappropriate to cite
+                        this document as other than work in progress.
+                      </p><p>
+                  
+                        This document was produced by
+                        a group operating
+                        under the
+                        <a href="https://www.w3.org/Consortium/Patent-Policy/"><abbr title="World Wide Web Consortium">W3C</abbr> Patent Policy</a>.
                       
-                              This document was produced by
-                              a group
-                              operating under the
-                              <a href="https://www.w3.org/Consortium/Patent-Policy/"><abbr title="World Wide Web Consortium">W3C</abbr> Patent Policy</a>.
-                            
+                  
+                  
+                              <abbr title="World Wide Web Consortium">W3C</abbr> maintains a
+                              <a rel="disclosure" href="https://www.w3.org/2004/01/pp-impl/19480/status">public list of any patent disclosures</a>
+                        made in connection with the deliverables of
+                        the group; that page also includes
+                        instructions for disclosing a patent. An individual who
+                        has actual knowledge of a patent which the individual
+                        believes contains
+                        <a href="https://www.w3.org/Consortium/Patent-Policy/#def-essential">Essential Claim(s)</a>
+                        must disclose the information in accordance with
+                        <a href="https://www.w3.org/Consortium/Patent-Policy/#sec-Disclosure">section 6 of the <abbr title="World Wide Web Consortium">W3C</abbr> Patent Policy</a>.
                       
-                      
-                                      <abbr title="World Wide Web Consortium">W3C</abbr> maintains a
-                                      <a rel="disclosure" href="https://www.w3.org/2004/01/pp-impl/19480/status">public list of any patent
-                                        disclosures</a>
-                              made in connection with the deliverables of
-                              the group; that page also includes
-                              instructions for disclosing a patent. An
-                              individual who has actual knowledge of a patent
-                              which the individual believes contains
-                              <a href="https://www.w3.org/Consortium/Patent-Policy/#def-essential">Essential Claim(s)</a>
-                              must disclose the information in accordance with
-                              <a href="https://www.w3.org/Consortium/Patent-Policy/#sec-Disclosure">section 6 of the <abbr title="World Wide Web Consortium">W3C</abbr> Patent Policy</a>.
-                            
-                      
-                    </p><p>
-                      This document is governed by the
-                      <a id="w3c_process_revision" href="https://www.w3.org/2018/Process-20180201/">1 February 2018 <abbr title="World Wide Web Consortium">W3C</abbr> Process Document</a>.
-                    </p></section><nav id="toc"><h2 class="introductory" id="table-of-contents">Table of Contents</h2><ol class="toc"><li class="tocline"><a class="tocxref" href="#abstract">Abstract</a></li><li class="tocline"><a class="tocxref" href="#sotd">Status of This Document</a></li><li class="tocline"><a class="tocxref" href="#intro"><span class="secno">1. </span>Introduction</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#intro_history"><span class="secno">1.1 </span>History and Purpose </a></li><li class="tocline"><a class="tocxref" href="#intro_wai-aria_suite"><span class="secno">1.2 </span>Relationship to Other Specifications </a></li><li class="tocline"><a class="tocxref" href="#intro_aapi"><span class="secno">1.3 </span>Accessibility <abbr title="Application Programming Interfaces">APIs</abbr> </a></li><li class="tocline"><a class="tocxref" href="#intro_treetypes"><span class="secno">1.4 </span>The Accessibility Tree and the <abbr title="Document Object Model">DOM</abbr> Tree</a></li></ol></li><li class="tocline"><a class="tocxref" href="#normative"><span class="secno">2. </span>Normative User Agent Implementation Requirements for <abbr title="Scalable Vector Graphics">SVG</abbr></a></li><li class="tocline"><a class="tocxref" href="#glossary"><span class="secno">3. </span>Important Terms</a></li><li class="tocline"><a class="tocxref" href="#keyboard-focus"><span class="secno">4. </span>Supporting Keyboard Navigation</a></li><li class="tocline"><a class="tocxref" href="#mapping"><span class="secno">5. </span>Mapping <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> to Accessibility <abbr title="Application Programming Interfaces">APIs</abbr></a><ol class="toc"><li class="tocline"><a class="tocxref" href="#mapping_general"><span class="secno">5.1 </span>General rules for exposing <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> semantics</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#exclude_elements"><span class="secno">5.1.1 </span>Excluding Elements from the Accessibility Tree</a></li><li class="tocline"><a class="tocxref" href="#include_elements"><span class="secno">5.1.2 </span>Including Elements in the Accessibility Tree</a></li></ol></li><li class="tocline"><a class="tocxref" href="#mapping_conflicts"><span class="secno">5.2 </span>Conflicts between native markup semantics and <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr></a></li><li class="tocline"><a class="tocxref" href="#mapping_nodirect"><span class="secno">5.3 </span>Exposing attributes that do not directly map to accessibility <abbr title="application programming interface">API</abbr> properties</a></li></ol></li><li class="tocline"><a class="tocxref" href="#mapping_role"><span class="secno">6. </span>Role mapping</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#roleMappingGeneralRules"><span class="secno">6.1 </span>General Rules</a></li><li class="tocline"><a class="tocxref" href="#mapping_role_table"><span class="secno">6.2 </span><abbr title="Scalable Vector Graphics">SVG</abbr> Element Mapping Table</a></li></ol></li><li class="tocline"><a class="tocxref" href="#mapping_state-property"><span class="secno">7. </span>State and Property Mapping</a></li><li class="tocline"><a class="tocxref" href="#mapping_additional"><span class="secno">8. </span>Special Processing Requiring Additional Computation</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#mapping_additional_nd"><span class="secno">8.1 </span>Name and Description</a></li><li class="tocline"><a class="tocxref" href="#mapping_additional_widget-value"><span class="secno">8.2 </span>Widget Values</a></li><li class="tocline"><a class="tocxref" href="#mapping_additional_relations"><span class="secno">8.3 </span>Relations</a></li><li class="tocline"><a class="tocxref" href="#mapping_additional_position"><span class="secno">8.4 </span>Group Position</a></li><li class="tocline"><a class="tocxref" href="#mapping_use_shadow_tree"><span class="secno">8.5 </span>Use-Element Shadow Trees</a></li><li class="tocline"><a class="tocxref" href="#mapping_view"><span class="secno">8.6 </span><abbr title="Scalable Vector Graphics">SVG</abbr> Views</a></li><li class="tocline"><a class="tocxref" href="#mapping_animation"><span class="secno">8.7 </span>Declarative Animation</a></li></ol></li><li class="tocline"><a class="tocxref" href="#mapping_actions"><span class="secno">9. </span>Actions</a></li><li class="tocline"><a class="tocxref" href="#mapping_events"><span class="secno">10. </span>Events</a></li><li class="tocline"><a class="tocxref" href="#document-handling"><span class="secno">11. </span>Special Document Handling Procedures</a></li><li class="tocline"><a class="tocxref" href="#security-privacy"><span class="secno">12. </span>Security and Privacy Considerations</a></li><li class="tocline"><a class="tocxref" href="#appendices"><span class="secno">A. </span>Appendices</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#acknowledgements"><span class="secno">A.1 </span>Acknowledgments</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#ack_group"><span class="secno">A.1.1 </span>Past participants in the <abbr title="Scalable Vector Graphics">SVG</abbr> Accessibility Task Force</a></li><li class="tocline"><a class="tocxref" href="#ack_funders"><span class="secno">A.1.2 </span>Enabling funders</a></li></ol></li><li class="tocline"><a class="tocxref" href="#issue-summary"><span class="secno">A.2 </span>Issue Summary</a></li></ol></li><li class="tocline"><a class="tocxref" href="#references"><span class="secno">B. </span>References</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#normative-references"><span class="secno">B.1 </span>Normative references</a></li><li class="tocline"><a class="tocxref" href="#informative-references"><span class="secno">B.2 </span>Informative references</a></li></ol></li></ol></nav>
+                  
+                </p><p>
+                  This document is governed by the
+                  <a id="w3c_process_revision" href="https://www.w3.org/2018/Process-20180201/">1 February 2018 <abbr title="World Wide Web Consortium">W3C</abbr> Process Document</a>.
+                </p></section><nav id="toc"><h2 class="introductory" id="table-of-contents">Table of Contents</h2><ol class="toc"><li class="tocline"><a class="tocxref" href="#abstract">Abstract</a></li><li class="tocline"><a class="tocxref" href="#sotd">Status of This Document</a></li><li class="tocline"><a class="tocxref" href="#intro"><span class="secno">1. </span>Introduction</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#intro_history"><span class="secno">1.1 </span>History and Purpose </a></li><li class="tocline"><a class="tocxref" href="#intro_wai-aria_suite"><span class="secno">1.2 </span>Relationship to Other Specifications </a></li><li class="tocline"><a class="tocxref" href="#intro_aapi"><span class="secno">1.3 </span>Accessibility <abbr title="Application Programming Interfaces">APIs</abbr> </a></li><li class="tocline"><a class="tocxref" href="#intro_treetypes"><span class="secno">1.4 </span>The Accessibility Tree and the <abbr title="Document Object Model">DOM</abbr> Tree</a></li></ol></li><li class="tocline"><a class="tocxref" href="#normative"><span class="secno">2. </span>Normative User Agent Implementation Requirements for <abbr title="Scalable Vector Graphics">SVG</abbr></a></li><li class="tocline"><a class="tocxref" href="#glossary"><span class="secno">3. </span>Important Terms</a></li><li class="tocline"><a class="tocxref" href="#keyboard-focus"><span class="secno">4. </span>Supporting Keyboard Navigation</a></li><li class="tocline"><a class="tocxref" href="#mapping"><span class="secno">5. </span>Mapping <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> to Accessibility <abbr title="Application Programming Interfaces">APIs</abbr></a><ol class="toc"><li class="tocline"><a class="tocxref" href="#mapping_general"><span class="secno">5.1 </span>General rules for exposing <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> semantics</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#exclude_elements"><span class="secno">5.1.1 </span>Excluding Elements from the Accessibility Tree</a></li><li class="tocline"><a class="tocxref" href="#include_elements"><span class="secno">5.1.2 </span>Including Elements in the Accessibility Tree</a></li></ol></li><li class="tocline"><a class="tocxref" href="#mapping_conflicts"><span class="secno">5.2 </span>Conflicts between native markup semantics and <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr></a></li><li class="tocline"><a class="tocxref" href="#mapping_nodirect"><span class="secno">5.3 </span>Exposing attributes that do not directly map to accessibility <abbr title="application programming interface">API</abbr> properties</a></li></ol></li><li class="tocline"><a class="tocxref" href="#mapping_role"><span class="secno">6. </span>Role mapping</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#roleMappingGeneralRules"><span class="secno">6.1 </span>General Rules</a></li><li class="tocline"><a class="tocxref" href="#mapping_role_table"><span class="secno">6.2 </span><abbr title="Scalable Vector Graphics">SVG</abbr> Element Mapping Table</a></li></ol></li><li class="tocline"><a class="tocxref" href="#mapping_state-property"><span class="secno">7. </span>State and Property Mapping</a></li><li class="tocline"><a class="tocxref" href="#mapping_additional"><span class="secno">8. </span>Special Processing Requiring Additional Computation</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#mapping_additional_nd"><span class="secno">8.1 </span>Name and Description</a></li><li class="tocline"><a class="tocxref" href="#mapping_additional_widget-value"><span class="secno">8.2 </span>Widget Values</a></li><li class="tocline"><a class="tocxref" href="#mapping_additional_relations"><span class="secno">8.3 </span>Relations</a></li><li class="tocline"><a class="tocxref" href="#mapping_additional_position"><span class="secno">8.4 </span>Group Position</a></li><li class="tocline"><a class="tocxref" href="#mapping_use_shadow_tree"><span class="secno">8.5 </span>Use-Element Shadow Trees</a></li><li class="tocline"><a class="tocxref" href="#mapping_view"><span class="secno">8.6 </span><abbr title="Scalable Vector Graphics">SVG</abbr> Views</a></li><li class="tocline"><a class="tocxref" href="#mapping_animation"><span class="secno">8.7 </span>Declarative Animation</a></li></ol></li><li class="tocline"><a class="tocxref" href="#mapping_actions"><span class="secno">9. </span>Actions</a></li><li class="tocline"><a class="tocxref" href="#mapping_events"><span class="secno">10. </span>Events</a></li><li class="tocline"><a class="tocxref" href="#document-handling"><span class="secno">11. </span>Special Document Handling Procedures</a></li><li class="tocline"><a class="tocxref" href="#security-privacy"><span class="secno">12. </span>Security and Privacy Considerations</a></li><li class="tocline"><a class="tocxref" href="#appendices"><span class="secno">A. </span>Appendices</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#acknowledgements"><span class="secno">A.1 </span>Acknowledgments</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#ack_group"><span class="secno">A.1.1 </span>Past participants in the <abbr title="Scalable Vector Graphics">SVG</abbr> Accessibility Task Force</a></li><li class="tocline"><a class="tocxref" href="#ack_funders"><span class="secno">A.1.2 </span>Enabling funders</a></li></ol></li><li class="tocline"><a class="tocxref" href="#issue-summary"><span class="secno">A.2 </span>Issue Summary</a></li></ol></li><li class="tocline"><a class="tocxref" href="#references"><span class="secno">B. </span>References</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#normative-references"><span class="secno">B.1 </span>Normative references</a></li><li class="tocline"><a class="tocxref" href="#informative-references"><span class="secno">B.2 </span>Informative references</a></li></ol></li></ol></nav>
 <section id="intro" class="informative">
 	<!--OddPage--><h2 id="x1-introduction"><span class="secno">1. </span>Introduction<a class="self-link" aria-label="§" href="#intro"></a></h2><p><em>This section is non-normative.</em></p>
   <p>
@@ -1012,7 +1006,7 @@ var mappingTableLabels = {
 <dl class="termlist">
     <dt><dfn data-lt="accessibility api|accessibility apis" id="dfn-accessibility-api" data-dfn-type="dfn">Accessibility <abbr title="Application Programming Interface">API</abbr></dfn></dt>
     <dd>
-      <p>Operating systems and other platforms provide a set of interfaces that expose information about <a class="termref internalDFN" data-lt="object" href="#dfn-object" data-link-type="dfn">objects</a> and <a class="termref internalDFN" data-lt="event" href="#dfn-event" data-link-type="dfn">events</a> to <a href="#dfn-assistive-technology" class="internalDFN" data-link-type="dfn">assistive technologies</a>. Assistive technologies use these interfaces to get information about and interact with those <a class="termref internalDFN respec-offending-element" data-lt="widget" href="#dfn-widget" data-link-type="dfn" title="Linter (local-refs-exist): Broken local reference found in document. Please fix the links mentioned. See developer console. Occured" id="respec-offender-linter-local-refs-exist-broken-local-reference-found-in-document-please-fix-the-links-mentioned-see-developer-console-occured">widgets</a>. Examples of accessibility <abbr title="application programming interfaces">APIs</abbr> are <a href="https://msdn.microsoft.com/en-us/library/ms697270(VS.85).aspx">Microsoft Active Accessibility</a> [<cite><a class="bibref" href="#bib-msaa">MSAA</a></cite>], <a href="https://msdn.microsoft.com/en-us/library/ee684013%28VS.85%29.aspx">Microsoft User Interface Automation</a> [<cite><a class="bibref" href="#bib-ui-automation">UI-AUTOMATION</a></cite>], <abbr title="Microsoft Active Accessibility">MSAA</abbr> with <cite><a href="https://msdn.microsoft.com/en-us/library/windows/desktop/dd561898(v=vs.85).aspx"><abbr title="User Interface Automation">UIA</abbr> Express</a></cite> [<cite><a class="bibref" href="#bib-uia-express">UIA-EXPRESS</a></cite>], the
+      <p>Operating systems and other platforms provide a set of interfaces that expose information about <a class="termref internalDFN" data-lt="object" href="#dfn-object" data-link-type="dfn">objects</a> and <a class="termref internalDFN" data-lt="event" href="#dfn-event" data-link-type="dfn">events</a> to <a href="#dfn-assistive-technology" class="internalDFN" data-link-type="dfn">assistive technologies</a>. Assistive technologies use these interfaces to get information about and interact with those <a class="termref internalDFN" data-lt="widget" href="#dfn-widget" data-link-type="dfn">widgets</a>. Examples of accessibility <abbr title="application programming interfaces">APIs</abbr> are <a href="https://msdn.microsoft.com/en-us/library/ms697270(VS.85).aspx">Microsoft Active Accessibility</a> [<cite><a class="bibref" href="#bib-msaa">MSAA</a></cite>], <a href="https://msdn.microsoft.com/en-us/library/ee684013%28VS.85%29.aspx">Microsoft User Interface Automation</a> [<cite><a class="bibref" href="#bib-ui-automation">UI-AUTOMATION</a></cite>], <abbr title="Microsoft Active Accessibility">MSAA</abbr> with <cite><a href="https://msdn.microsoft.com/en-us/library/windows/desktop/dd561898(v=vs.85).aspx"><abbr title="User Interface Automation">UIA</abbr> Express</a></cite> [<cite><a class="bibref" href="#bib-uia-express">UIA-EXPRESS</a></cite>], the
       	<a href="https://developer.apple.com/documentation/appkit/accessibility/nsaccessibility">Mac <abbr title="OS Ten">OS X</abbr> Accessibility Protocol</a> [<cite><a class="bibref" href="#bib-axapi">AXAPI</a></cite>], the <cite><a href="https://developer.gnome.org/atk/unstable/">Linux/Unix Accessibility Toolkit</a></cite> [<cite><a class="bibref" href="#bib-atk">ATK</a></cite>] and <cite><a href="https://developer.gnome.org/libatspi/stable/">Assistive Technology Service Provider Interface</a></cite> [<cite><a class="bibref" href="#bib-at-spi">AT-SPI</a></cite>], and <a href="https://wiki.linuxfoundation.org/accessibility/iaccessible2/start">IAccessible2</a> [<cite><a class="bibref" href="#bib-iaccessible2">IAccessible2</a></cite>].</p>
     </dd>
     
@@ -1032,7 +1026,7 @@ var mappingTableLabels = {
     </dd>
 	<dt><dfn data-lt="accessible object|accessible objects" id="dfn-accessible-object" data-dfn-type="dfn">Accessible object</dfn></dt>
     <dd>
-      <p>A <a href="#dfn-node" class="internalDFN respec-offending-element" data-link-type="dfn" title="Linter (local-refs-exist): Broken local reference found in document. Please fix the links mentioned. See developer console. Occured" id="respec-offender-linter-local-refs-exist-broken-local-reference-found-in-document-please-fix-the-links-mentioned-see-developer-console-occured-0">node</a> in the <a href="#dfn-accessibility-tree" class="internalDFN" data-link-type="dfn">accessibility tree</a> of a platform <a href="#dfn-accessibility-api" class="internalDFN" data-link-type="dfn">accessibility <abbr title="application programming interface">API</abbr></a>. Accessible objects expose various <a class="termref internalDFN" data-lt="state" href="#dfn-state" data-link-type="dfn">states</a>, <a class="termref internalDFN" data-lt="property" href="#dfn-property" data-link-type="dfn">properties</a>, and <a class="termref internalDFN" data-lt="event" href="#dfn-event" data-link-type="dfn">events</a> for use by <a href="#dfn-assistive-technology" class="internalDFN" data-link-type="dfn">assistive technologies</a>.  In the context of markup languages (e.g., <abbr title="Hypertext Markup Language">HTML</abbr> and <abbr title="Scalable Vector Graphics">SVG</abbr>) in general, and of <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> in particular, markup <a class="termref internalDFN" data-lt="element" href="#dfn-element" data-link-type="dfn">elements</a> and their <a class="termref internalDFN" data-lt="attribute" href="#dfn-attribute" data-link-type="dfn">attributes</a> are represented as accessible objects.  </p>
+      <p>A <a href="#dfn-node" class="internalDFN" data-link-type="dfn">node</a> in the <a href="#dfn-accessibility-tree" class="internalDFN" data-link-type="dfn">accessibility tree</a> of a platform <a href="#dfn-accessibility-api" class="internalDFN" data-link-type="dfn">accessibility <abbr title="application programming interface">API</abbr></a>. Accessible objects expose various <a class="termref internalDFN" data-lt="state" href="#dfn-state" data-link-type="dfn">states</a>, <a class="termref internalDFN" data-lt="property" href="#dfn-property" data-link-type="dfn">properties</a>, and <a class="termref internalDFN" data-lt="event" href="#dfn-event" data-link-type="dfn">events</a> for use by <a href="#dfn-assistive-technology" class="internalDFN" data-link-type="dfn">assistive technologies</a>.  In the context of markup languages (e.g., <abbr title="Hypertext Markup Language">HTML</abbr> and <abbr title="Scalable Vector Graphics">SVG</abbr>) in general, and of <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> in particular, markup <a class="termref internalDFN" data-lt="element" href="#dfn-element" data-link-type="dfn">elements</a> and their <a class="termref internalDFN" data-lt="attribute" href="#dfn-attribute" data-link-type="dfn">attributes</a> are represented as accessible objects.  </p>
     </dd>
     
     
@@ -1079,7 +1073,7 @@ var mappingTableLabels = {
     
     <dt><dfn id="dfn-hidden" data-dfn-type="dfn">Hidden</dfn></dt>
     <dd>
-        <p>Indicates that the <a href="#dfn-element" class="internalDFN" data-link-type="dfn">element</a> is not visible, <a href="#dfn-perceivable" class="internalDFN respec-offending-element" data-link-type="dfn" title="Linter (local-refs-exist): Broken local reference found in document. Please fix the links mentioned. See developer console. Occured" id="respec-offender-linter-local-refs-exist-broken-local-reference-found-in-document-please-fix-the-links-mentioned-see-developer-console-occured-1">perceivable</a>, or interactive to <em>any</em> user. An element is considered <em>hidden</em> if it or any one of its ancestor elements is not rendered or is explicitly hidden.</p>
+        <p>Indicates that the <a href="#dfn-element" class="internalDFN" data-link-type="dfn">element</a> is not visible, <a href="#dfn-perceivable" class="internalDFN" data-link-type="dfn">perceivable</a>, or interactive to <em>any</em> user. An element is considered <em>hidden</em> if it or any one of its ancestor elements is not rendered or is explicitly hidden.</p>
     </dd>
     <dt><dfn data-lt="informative|non-normative" id="dfn-informative" data-dfn-type="dfn">Informative</dfn></dt>
     <dd>
@@ -1108,7 +1102,7 @@ var mappingTableLabels = {
     <dt><dfn data-lt="object|objects" id="dfn-object" data-dfn-type="dfn">Object</dfn></dt>
     <dd>
       <p>In the context of user interfaces,  an item in the   perceptual user experience, represented in markup languages by one or   more <a class="termref internalDFN" data-lt="element" href="#dfn-element" data-link-type="dfn">elements</a>, and rendered by <a class="termref internalDFN" data-lt="user agent" href="#dfn-user-agent" data-link-type="dfn">user agents</a>.</p>
-    In the context of programming, the instantiation of one or more <a class="termref internalDFN respec-offending-element" data-lt="class" href="#dfn-class" data-link-type="dfn" title="Linter (local-refs-exist): Broken local reference found in document. Please fix the links mentioned. See developer console. Occured" id="respec-offender-linter-local-refs-exist-broken-local-reference-found-in-document-please-fix-the-links-mentioned-see-developer-console-occured-2">classes</a> and interfaces which define the general characteristics of similar objects. An object in an <a href="#dfn-accessibility-api" class="internalDFN" data-link-type="dfn">accessibility <abbr title="Application Programming Interfaces">API</abbr></a> may represent one or more <abbr title="Document Object Model">DOM</abbr> objects. <a class="termref internalDFN" data-lt="accessibility api" href="#dfn-accessibility-api" data-link-type="dfn">Accessibility <abbr title="application programming interfaces">APIs</abbr></a> have defined interfaces that are distinct from <abbr title="Document Object Model">DOM</abbr> interfaces.</dd>
+    In the context of programming, the instantiation of one or more <a class="termref internalDFN" data-lt="class" href="#dfn-class" data-link-type="dfn">classes</a> and interfaces which define the general characteristics of similar objects. An object in an <a href="#dfn-accessibility-api" class="internalDFN" data-link-type="dfn">accessibility <abbr title="Application Programming Interfaces">API</abbr></a> may represent one or more <abbr title="Document Object Model">DOM</abbr> objects. <a class="termref internalDFN" data-lt="accessibility api" href="#dfn-accessibility-api" data-link-type="dfn">Accessibility <abbr title="application programming interfaces">APIs</abbr></a> have defined interfaces that are distinct from <abbr title="Document Object Model">DOM</abbr> interfaces.</dd>
   
     
     
@@ -1189,7 +1183,7 @@ var mappingTableLabels = {
     requirements in the Core Accessibility <abbr title="Application Programming Interfaces">API</abbr> Mappings [<cite><a class="bibref" href="#bib-core-aam">CORE-AAM</a></cite>].
   </p>
 
-  <div class="note" id="issue-container-generatedID"><div role="heading" class="note-title marker" id="h-note" aria-level="3"><span>Note</span></div><p class="">
+  <div class="note" role="note" id="issue-container-generatedID"><div role="heading" class="note-title marker" id="h-note" aria-level="3"><span>Note</span></div><p class="">
     The <abbr title="Scalable Vector Graphics">SVG</abbr> Accessibility Task Force intends to develop
     more detailed guidelines for authors and user agents
     regarding navigation in graphical documents.
@@ -1238,7 +1232,7 @@ var mappingTableLabels = {
         This section details the expected interpretation
         of <abbr title="Scalable Vector Graphics">SVG</abbr> host language semantics.
       </p>
-      <div class="note" id="issue-container-generatedID-0"><div role="heading" class="note-title marker" id="h-note-0" aria-level="5"><span>Note</span></div><div class="">
+      <div class="note" role="note" id="issue-container-generatedID-0"><div role="heading" class="note-title marker" id="h-note-0" aria-level="5"><span>Note</span></div><div class="">
         <p>The other factors for excluding elements,
           as described in the Core Accessibility <abbr title="Application Programming Interfaces">API</abbr> Mappings,
           can be summarized as follows: 
@@ -1296,7 +1290,7 @@ var mappingTableLabels = {
       for rendered element instances created by a <code>use</code> element,
       as described in the section on <a href="#mapping_use_shadow_tree">Use-Element Shadow Trees</a>.
       </p>
-      <div class="note" id="issue-container-generatedID-1"><div role="heading" class="note-title marker" id="h-note-1" aria-level="5"><span>Note</span></div><p class="">
+      <div class="note" role="note" id="issue-container-generatedID-1"><div role="heading" class="note-title marker" id="h-note-1" aria-level="5"><span>Note</span></div><p class="">
         Although they are not directly included in the accessibility tree,
         animation and view elements can affect
         the accessible objects representing their target elements,
@@ -1373,7 +1367,7 @@ var mappingTableLabels = {
         A shape element with markers is visible or interactive
         if any of its markers are visible or interactive.
       </p>
-      <div class="note" id="issue-container-generatedID-2"><div role="heading" class="note-title marker" id="h-note-2" aria-level="5"><span>Note</span></div><div class="">
+      <div class="note" role="note" id="issue-container-generatedID-2"><div role="heading" class="note-title marker" id="h-note-2" aria-level="5"><span>Note</span></div><div class="">
         <p>
           In <abbr title="Hypertext Markup Language">HTML</abbr> and in other <abbr title="cascading style sheets">CSS</abbr>-styled documents,
           elements made invisible with <code>visibility: hidden</code>
@@ -1419,7 +1413,7 @@ var mappingTableLabels = {
 
       </p>
 
-      <div class="note" id="issue-container-generatedID-3"><div role="heading" class="note-title marker" id="h-note-3" aria-level="5"><span>Note</span></div><div class="">
+      <div class="note" role="note" id="issue-container-generatedID-3"><div role="heading" class="note-title marker" id="h-note-3" aria-level="5"><span>Note</span></div><div class="">
         <p>
           Various other style properties and geometric attributes (of an element itself or an ancestor element) can make an element invisible.  For simplicity, flexibility, and performance reasons, these are not considered a hiding method that excludes elements from the accessibility tree.
         </p>
@@ -1600,7 +1594,7 @@ var mappingTableLabels = {
           of the Core Accessibility <abbr title="Application Programming Interfaces">API</abbr> Mappings specification [<cite><a class="bibref" href="#bib-core-aam">CORE-AAM</a></cite>].
         </li>
       </ul>
-      <div class="note" id="issue-container-generatedID-5"><div role="heading" class="note-title marker" id="h-note-4" aria-level="5"><span>Note</span></div><div class="">
+      <div class="note" role="note" id="issue-container-generatedID-5"><div role="heading" class="note-title marker" id="h-note-4" aria-level="5"><span>Note</span></div><div class="">
         <p>
         At the time of drafting this document,
         those criteria are as follows:
@@ -1668,7 +1662,7 @@ var mappingTableLabels = {
         However, the ability to receive pointer events overrides any exclusion
         based on the <code>visibility: hidden</code> style property.
       </p>
-      <div class="note" id="issue-container-generatedID-6"><div role="heading" class="note-title marker" id="h-note-5" aria-level="5"><span>Note</span></div><p class="">
+      <div class="note" role="note" id="issue-container-generatedID-6"><div role="heading" class="note-title marker" id="h-note-5" aria-level="5"><span>Note</span></div><p class="">
         The <code>tabindex</code> attribute
         and the <code>pointer-events</code> property
         have no impact on elements which are not rendered at all,
@@ -1717,7 +1711,7 @@ var mappingTableLabels = {
       Platform <a class="termref" href="#dfn-accessibility-api">accessibility <abbr title="Application Programming Interfaces">APIs</abbr></a>
       traditionally have had a finite set of
       predefined <a href="#dfn-role" class="termref">roles</a> that are expected
-      by <a class="termref respec-offending-element" href="#dfn-assistive-technologies" title="Linter (local-refs-exist): Broken local reference found in document. Please fix the links mentioned. See developer console. Occured" id="respec-offender-linter-local-refs-exist-broken-local-reference-found-in-document-please-fix-the-links-mentioned-see-developer-console-occured-3">assistive technologies</a>
+      by <a class="termref" href="#dfn-assistive-technologies">assistive technologies</a>
       on that platform and only one or two roles may be exposed.
     </p>
     <p>
@@ -2303,7 +2297,7 @@ var mappingTableLabels = {
     <a class="graphics-mapping" href="https://w3c.github.io/graphics-aam/#role-map-graphics-object"><code>graphics-object</code></a> role mapping
     if the element meets the criteria for <a href="#include_elements">Including Elements in the Accessibility Tree</a>;
     otherwise, no <a class="termref internalDFN" data-lt="accessible object" href="#dfn-accessible-object" data-link-type="dfn">accessible object</a> created
-    <div class="note" id="issue-container-generatedID-7"><div role="heading" class="note-title marker" id="h-note-6" aria-level="4"><span>Note</span></div><p class="">
+    <div class="note" role="note" id="issue-container-generatedID-7"><div role="heading" class="note-title marker" id="h-note-6" aria-level="4"><span>Note</span></div><p class="">
       A <code>symbol</code> element is not directly rendered,
       and therefore not directly exposed in the accessibility tree.
       However, the role (default or author-supplied) for the element
@@ -2366,7 +2360,7 @@ var mappingTableLabels = {
           </dd>
 
     </dl>
-    <div class="note" id="issue-container-generatedID-8"><div role="heading" class="note-title marker" id="h-note-7" aria-level="4"><span>Note</span></div><p class="">
+    <div class="note" role="note" id="issue-container-generatedID-8"><div role="heading" class="note-title marker" id="h-note-7" aria-level="4"><span>Note</span></div><p class="">
       The platform mappings given above are similar to
       those recommended for <a class="html-mapping" href="https://w3c.github.io/html-aam/#el-p">the <abbr title="Hypertext Markup Language">HTML</abbr> p element</a>
       in the <abbr title="Hypertext Markup Language">HTML</abbr> Accessibility <abbr title="Application Programming Interfaces">API</abbr> Mappings specification [<cite><a class="bibref" href="#bib-html-aam">HTML-AAM</a></cite>].
@@ -2448,7 +2442,7 @@ var mappingTableLabels = {
     <a class="graphics-mapping" href="https://w3c.github.io/graphics-aam/#role-map-graphics-object"><code>graphics-object</code></a> role mapping
     if the element meets the criteria for <a href="#include_elements">Including Elements in the Accessibility Tree</a>;
     otherwise, no <a class="termref internalDFN" data-lt="accessible object" href="#dfn-accessible-object" data-link-type="dfn">accessible object</a> created
-    <div class="note" id="issue-container-generatedID-11"><div role="heading" class="note-title marker" id="h-note-8" aria-level="4"><span>Note</span></div><p class="">
+    <div class="note" role="note" id="issue-container-generatedID-11"><div role="heading" class="note-title marker" id="h-note-8" aria-level="4"><span>Note</span></div><p class="">
       Note that the re-used graphics
       in the <code>use</code> element's shadow tree
       may still be included in the accessibility tree,
@@ -2685,7 +2679,7 @@ var mappingTableLabels = {
       only actual <abbr title="Document Object Model">DOM</abbr> child elements are considered,
       regardless of whether or not the parent element has an associated shadow tree.</p>
 
-      <div class="note" id="issue-container-generatedID-19"><div role="heading" class="note-title marker" id="h-note-12" aria-level="4"><span>Note</span></div><div class="">
+      <div class="note" role="note" id="issue-container-generatedID-19"><div role="heading" class="note-title marker" id="h-note-12" aria-level="4"><span>Note</span></div><div class="">
         <p>
           The net effect of these changes is to establish the following priority
           of alternative text values for the accessible name:
@@ -2949,7 +2943,7 @@ var mappingTableLabels = {
         the User Agent <em class="rfc2119" title="MUST">MUST</em> expose the change
         in the same way as if the actual attribute value was changed.
       </p>
-      <div class="note" id="issue-container-generatedID-21"><div role="heading" class="note-title marker" id="h-note-13" aria-level="4"><span>Note</span></div><p class="">
+      <div class="note" role="note" id="issue-container-generatedID-21"><div role="heading" class="note-title marker" id="h-note-13" aria-level="4"><span>Note</span></div><p class="">
         The <code>role</code> attribute is not animatable.
       </p></div>
       <p>
@@ -3072,9 +3066,9 @@ var mappingTableLabels = {
     <section id="normative-references">
         <h3 id="b-1-normative-references"><span class="secno">B.1 </span>Normative references<a class="self-link" aria-label="§" href="#normative-references"></a></h3>
       <dl class="bibliography">
-        <dt id="bib-accname-aam">[ACCNAME-AAM]</dt><dd><a href="https://www.w3.org/TR/accname-1.1/"><cite>Accessible Name and Description Computation 1.1</cite></a>. Joanmarie Diggs; Bryan Garaventa; Michael Cooper. W3C. 18 December 2018. W3C Recommendation. URL: <a href="https://www.w3.org/TR/accname-1.1/">https://www.w3.org/TR/accname-1.1/</a></dd><dt id="bib-at-spi">[AT-SPI]</dt><dd><a href="https://developer.gnome.org/libatspi/stable/"><cite>Assistive Technology Service Provider Interface</cite></a>.  The GNOME Project. URL: <a href="https://developer.gnome.org/libatspi/stable/">https://developer.gnome.org/libatspi/stable/</a></dd><dt id="bib-atk">[ATK]</dt><dd><a href="https://developer.gnome.org/atk/stable/"><cite>ATK - Accessibility Toolkit</cite></a>.  The GNOME Project. URL: <a href="https://developer.gnome.org/atk/stable/">https://developer.gnome.org/atk/stable/</a></dd><dt id="bib-axapi">[AXAPI]</dt><dd><a href="https://developer.apple.com/documentation/appkit/nsaccessibility"><cite>The NSAccessibility Protocol for macOS</cite></a>.  Apple, Inc. URL: <a href="https://developer.apple.com/documentation/appkit/nsaccessibility">https://developer.apple.com/documentation/appkit/nsaccessibility</a></dd><dt id="bib-core-aam">[CORE-AAM]</dt><dd><a href="https://www.w3.org/TR/core-aam-1.1/"><cite>Core Accessibility API Mappings 1.1</cite></a>. Joanmarie Diggs; Joseph Scheuhammer; Richard Schwerdtfeger; Michael Cooper; Andi Snow-Weaver; Aaron Leventhal. W3C. 14 December 2017. W3C Recommendation. URL: <a href="https://www.w3.org/TR/core-aam-1.1/">https://www.w3.org/TR/core-aam-1.1/</a></dd><dt id="bib-css-cascade-3">[CSS-CASCADE-3]</dt><dd><a href="https://www.w3.org/TR/css-cascade-3/"><cite>CSS Cascading and Inheritance Level 3</cite></a>. Elika Etemad; Tab Atkins Jr.. W3C. 28 August 2018. W3C Candidate Recommendation. URL: <a href="https://www.w3.org/TR/css-cascade-3/">https://www.w3.org/TR/css-cascade-3/</a></dd><dt id="bib-dom">[DOM]</dt><dd><a href="https://dom.spec.whatwg.org/"><cite>DOM Standard</cite></a>. Anne van Kesteren. WHATWG. Living Standard. URL: <a href="https://dom.spec.whatwg.org/">https://dom.spec.whatwg.org/</a></dd><dt id="bib-graphics-aam">[GRAPHICS-AAM]</dt><dd><a href="https://www.w3.org/TR/graphics-aam-1.0/"><cite>Graphics Accessibility API Mappings</cite></a>. Amelia Bellamy-Royds; Joanmarie Diggs; Michael Cooper. W3C. 2 October 2018. W3C Recommendation. URL: <a href="https://www.w3.org/TR/graphics-aam-1.0/">https://www.w3.org/TR/graphics-aam-1.0/</a></dd><dt id="bib-html-aam">[HTML-AAM]</dt><dd><a href="https://www.w3.org/TR/html-aam-1.0/"><cite>HTML Accessibility API Mappings 1.0</cite></a>. Steve Faulkner; Alexander Surkov; Scott O'Hara; Bogdan Brinza; Jason Kiss; Cynthia Shelly. W3C. 24 January 2019. W3C Working Draft. URL: <a href="https://www.w3.org/TR/html-aam-1.0/">https://www.w3.org/TR/html-aam-1.0/</a></dd><dt id="bib-iaccessible2">[IAccessible2]</dt><dd><a href="https://www.linuxfoundation.org/collaborate/workgroups/accessibility/iaccessible2"><cite>IAccessible2</cite></a>.  Linux Foundation. URL: <a href="https://www.linuxfoundation.org/collaborate/workgroups/accessibility/iaccessible2">https://www.linuxfoundation.org/collaborate/workgroups/accessibility/iaccessible2</a></dd><dt id="bib-msaa">[MSAA]</dt><dd><a href="https://msdn.microsoft.com/en-us/library/ms697707.aspx"><cite>Microsoft Active Accessibility (MSAA) 2.0</cite></a>.  Microsoft Corporation. URL: <a href="https://msdn.microsoft.com/en-us/library/ms697707.aspx">https://msdn.microsoft.com/en-us/library/ms697707.aspx</a></dd><dt id="bib-rfc2119">[rfc2119]</dt><dd><a href="https://tools.ietf.org/html/rfc2119"><cite>Key words for use in RFCs to Indicate Requirement Levels</cite></a>. S. Bradner. IETF. March 1997. Best Current Practice. URL: <a href="https://tools.ietf.org/html/rfc2119">https://tools.ietf.org/html/rfc2119</a></dd><dt id="bib-svg1">[SVG1]</dt><dd><a href="https://www.w3.org/TR/SVG/"><cite>Scalable Vector Graphics (SVG) 1.0 Specification</cite></a>. Jon Ferraiolo. W3C. 4 September 2001. W3C Recommendation. URL: <a href="https://www.w3.org/TR/SVG/">https://www.w3.org/TR/SVG/</a></dd><dt id="bib-svg11">[SVG11]</dt><dd><a href="https://www.w3.org/TR/SVG11/"><cite>Scalable Vector Graphics (SVG) 1.1 (Second Edition)</cite></a>. Erik Dahlström; Patrick Dengler; Anthony Grasso; Chris Lilley; Cameron McCormack; Doug Schepers; Jonathan Watt; Jon Ferraiolo; Jun Fujisawa; Dean Jackson et al. W3C. 16 August 2011. W3C Recommendation. URL: <a href="https://www.w3.org/TR/SVG11/">https://www.w3.org/TR/SVG11/</a></dd><dt id="bib-svg2">[SVG2]</dt><dd><a href="https://www.w3.org/TR/SVG2/"><cite>Scalable Vector Graphics (SVG) 2</cite></a>. Amelia Bellamy-Royds; Bogdan Brinza; Chris Lilley; Dirk Schulze; David Storey; Eric Willigers. W3C. 4 October 2018. W3C Candidate Recommendation. URL: <a href="https://www.w3.org/TR/SVG2/">https://www.w3.org/TR/SVG2/</a></dd><dt id="bib-ui-automation">[UI-AUTOMATION]</dt><dd><a href="https://msdn.microsoft.com/en-us/library/ee684009%28v=vs.85%29.aspx"><cite>UI Automation</cite></a>.  Microsoft Corporation. URL: <a href="https://msdn.microsoft.com/en-us/library/ee684009%28v=vs.85%29.aspx">https://msdn.microsoft.com/en-us/library/ee684009%28v=vs.85%29.aspx</a></dd><dt id="bib-uia-express">[UIA-EXPRESS]</dt><dd><a href="https://msdn.microsoft.com/en-us/library/windows/desktop/dd561898%28v=vs.85%29.aspx"><cite>The IAccessibleEx Interface</cite></a>.  Microsoft Corporation. URL: <a href="https://msdn.microsoft.com/en-us/library/windows/desktop/dd561898%28v=vs.85%29.aspx">https://msdn.microsoft.com/en-us/library/windows/desktop/dd561898%28v=vs.85%29.aspx</a></dd><dt id="bib-wai-aria">[WAI-ARIA]</dt><dd><a href="https://www.w3.org/TR/wai-aria-1.1/"><cite>Accessible Rich Internet Applications (WAI-ARIA) 1.1</cite></a>. Joanmarie Diggs; Shane McCarron; Michael Cooper; Richard Schwerdtfeger; James Craig. W3C. 14 December 2017. W3C Recommendation. URL: <a href="https://www.w3.org/TR/wai-aria-1.1/">https://www.w3.org/TR/wai-aria-1.1/</a></dd><dt id="bib-wcag21">[WCAG21]</dt><dd><a href="https://www.w3.org/TR/WCAG21/"><cite>Web Content Accessibility Guidelines (WCAG) 2.1</cite></a>. Andrew Kirkpatrick; Joshue O Connor; Alastair Campbell; Michael Cooper. W3C. 5 June 2018. W3C Recommendation. URL: <a href="https://www.w3.org/TR/WCAG21/">https://www.w3.org/TR/WCAG21/</a></dd>
+        <dt id="bib-accname-aam">[ACCNAME-AAM]</dt><dd><a href="https://www.w3.org/TR/accname-1.1/"><cite>Accessible Name and Description Computation 1.1</cite></a>. Joanmarie Diggs; Bryan Garaventa; Michael Cooper. W3C. 18 December 2018. W3C Recommendation. URL: <a href="https://www.w3.org/TR/accname-1.1/">https://www.w3.org/TR/accname-1.1/</a></dd><dt id="bib-at-spi">[AT-SPI]</dt><dd><a href="https://developer.gnome.org/libatspi/stable/"><cite>Assistive Technology Service Provider Interface</cite></a>.  The GNOME Project. URL: <a href="https://developer.gnome.org/libatspi/stable/">https://developer.gnome.org/libatspi/stable/</a></dd><dt id="bib-atk">[ATK]</dt><dd><a href="https://developer.gnome.org/atk/stable/"><cite>ATK - Accessibility Toolkit</cite></a>.  The GNOME Project. URL: <a href="https://developer.gnome.org/atk/stable/">https://developer.gnome.org/atk/stable/</a></dd><dt id="bib-axapi">[AXAPI]</dt><dd><a href="https://developer.apple.com/documentation/appkit/nsaccessibility"><cite>The NSAccessibility Protocol for macOS</cite></a>.  Apple, Inc. URL: <a href="https://developer.apple.com/documentation/appkit/nsaccessibility">https://developer.apple.com/documentation/appkit/nsaccessibility</a></dd><dt id="bib-core-aam">[CORE-AAM]</dt><dd><a href="https://www.w3.org/TR/core-aam-1.1/"><cite>Core Accessibility API Mappings 1.1</cite></a>. Joanmarie Diggs; Joseph Scheuhammer; Richard Schwerdtfeger; Michael Cooper; Andi Snow-Weaver; Aaron Leventhal. W3C. 14 December 2017. W3C Recommendation. URL: <a href="https://www.w3.org/TR/core-aam-1.1/">https://www.w3.org/TR/core-aam-1.1/</a></dd><dt id="bib-css-cascade-3">[CSS-CASCADE-3]</dt><dd><a href="https://www.w3.org/TR/css-cascade-3/"><cite>CSS Cascading and Inheritance Level 3</cite></a>. Elika Etemad; Tab Atkins Jr.. W3C. 28 August 2018. W3C Candidate Recommendation. URL: <a href="https://www.w3.org/TR/css-cascade-3/">https://www.w3.org/TR/css-cascade-3/</a></dd><dt id="bib-dom">[DOM]</dt><dd><a href="https://dom.spec.whatwg.org/"><cite>DOM Standard</cite></a>. Anne van Kesteren. WHATWG. Living Standard. URL: <a href="https://dom.spec.whatwg.org/">https://dom.spec.whatwg.org/</a></dd><dt id="bib-graphics-aam">[GRAPHICS-AAM]</dt><dd><a href="https://www.w3.org/TR/graphics-aam-1.0/"><cite>Graphics Accessibility API Mappings</cite></a>. Amelia Bellamy-Royds; Joanmarie Diggs; Michael Cooper. W3C. 2 October 2018. W3C Recommendation. URL: <a href="https://www.w3.org/TR/graphics-aam-1.0/">https://www.w3.org/TR/graphics-aam-1.0/</a></dd><dt id="bib-html-aam">[HTML-AAM]</dt><dd><a href="https://www.w3.org/TR/html-aam-1.0/"><cite>HTML Accessibility API Mappings 1.0</cite></a>. Steve Faulkner; Alexander Surkov; Scott O'Hara; Bogdan Brinza; Jason Kiss; Cynthia Shelly. W3C. 31 January 2019. W3C Working Draft. URL: <a href="https://www.w3.org/TR/html-aam-1.0/">https://www.w3.org/TR/html-aam-1.0/</a></dd><dt id="bib-iaccessible2">[IAccessible2]</dt><dd><a href="https://www.linuxfoundation.org/collaborate/workgroups/accessibility/iaccessible2"><cite>IAccessible2</cite></a>.  Linux Foundation. URL: <a href="https://www.linuxfoundation.org/collaborate/workgroups/accessibility/iaccessible2">https://www.linuxfoundation.org/collaborate/workgroups/accessibility/iaccessible2</a></dd><dt id="bib-msaa">[MSAA]</dt><dd><a href="https://msdn.microsoft.com/en-us/library/ms697707.aspx"><cite>Microsoft Active Accessibility (MSAA) 2.0</cite></a>.  Microsoft Corporation. URL: <a href="https://msdn.microsoft.com/en-us/library/ms697707.aspx">https://msdn.microsoft.com/en-us/library/ms697707.aspx</a></dd><dt id="bib-rfc2119">[rfc2119]</dt><dd><a href="https://tools.ietf.org/html/rfc2119"><cite>Key words for use in RFCs to Indicate Requirement Levels</cite></a>. S. Bradner. IETF. March 1997. Best Current Practice. URL: <a href="https://tools.ietf.org/html/rfc2119">https://tools.ietf.org/html/rfc2119</a></dd><dt id="bib-svg1">[SVG1]</dt><dd><a href="https://www.w3.org/TR/SVG/"><cite>Scalable Vector Graphics (SVG) 1.0 Specification</cite></a>. Jon Ferraiolo. W3C. 4 September 2001. W3C Recommendation. URL: <a href="https://www.w3.org/TR/SVG/">https://www.w3.org/TR/SVG/</a></dd><dt id="bib-svg11">[SVG11]</dt><dd><a href="https://www.w3.org/TR/SVG11/"><cite>Scalable Vector Graphics (SVG) 1.1 (Second Edition)</cite></a>. Erik Dahlström; Patrick Dengler; Anthony Grasso; Chris Lilley; Cameron McCormack; Doug Schepers; Jonathan Watt; Jon Ferraiolo; Jun Fujisawa; Dean Jackson et al. W3C. 16 August 2011. W3C Recommendation. URL: <a href="https://www.w3.org/TR/SVG11/">https://www.w3.org/TR/SVG11/</a></dd><dt id="bib-svg2">[SVG2]</dt><dd><a href="https://www.w3.org/TR/SVG2/"><cite>Scalable Vector Graphics (SVG) 2</cite></a>. Amelia Bellamy-Royds; Bogdan Brinza; Chris Lilley; Dirk Schulze; David Storey; Eric Willigers. W3C. 4 October 2018. W3C Candidate Recommendation. URL: <a href="https://www.w3.org/TR/SVG2/">https://www.w3.org/TR/SVG2/</a></dd><dt id="bib-ui-automation">[UI-AUTOMATION]</dt><dd><a href="https://msdn.microsoft.com/en-us/library/ee684009%28v=vs.85%29.aspx"><cite>UI Automation</cite></a>.  Microsoft Corporation. URL: <a href="https://msdn.microsoft.com/en-us/library/ee684009%28v=vs.85%29.aspx">https://msdn.microsoft.com/en-us/library/ee684009%28v=vs.85%29.aspx</a></dd><dt id="bib-uia-express">[UIA-EXPRESS]</dt><dd><a href="https://msdn.microsoft.com/en-us/library/windows/desktop/dd561898%28v=vs.85%29.aspx"><cite>The IAccessibleEx Interface</cite></a>.  Microsoft Corporation. URL: <a href="https://msdn.microsoft.com/en-us/library/windows/desktop/dd561898%28v=vs.85%29.aspx">https://msdn.microsoft.com/en-us/library/windows/desktop/dd561898%28v=vs.85%29.aspx</a></dd><dt id="bib-wai-aria">[WAI-ARIA]</dt><dd><a href="https://www.w3.org/TR/wai-aria-1.1/"><cite>Accessible Rich Internet Applications (WAI-ARIA) 1.1</cite></a>. Joanmarie Diggs; Shane McCarron; Michael Cooper; Richard Schwerdtfeger; James Craig. W3C. 14 December 2017. W3C Recommendation. URL: <a href="https://www.w3.org/TR/wai-aria-1.1/">https://www.w3.org/TR/wai-aria-1.1/</a></dd><dt id="bib-wcag21">[WCAG21]</dt><dd><a href="https://www.w3.org/TR/WCAG21/"><cite>Web Content Accessibility Guidelines (WCAG) 2.1</cite></a>. Andrew Kirkpatrick; Joshue O Connor; Alastair Campbell; Michael Cooper. W3C. 5 June 2018. W3C Recommendation. URL: <a href="https://www.w3.org/TR/WCAG21/">https://www.w3.org/TR/WCAG21/</a></dd>
       </dl></section><section id="informative-references">
         <h3 id="b-2-informative-references"><span class="secno">B.2 </span>Informative references<a class="self-link" aria-label="§" href="#informative-references"></a></h3>
       <dl class="bibliography">
-        <dt id="bib-aria-practices">[ARIA-PRACTICES]</dt><dd><a href="https://www.w3.org/TR/wai-aria-practices-1.1/"><cite>WAI-ARIA Authoring Practices 1.1</cite></a>. Matthew King; James Nurthen; Michiel Bijl; Michael Cooper; Joseph Scheuhammer; Lisa Pappas; Richard Schwerdtfeger. W3C. 26 July 2018. W3C Note. URL: <a href="https://www.w3.org/TR/wai-aria-practices-1.1/">https://www.w3.org/TR/wai-aria-practices-1.1/</a></dd><dt id="bib-graphics-aria">[GRAPHICS-ARIA]</dt><dd><a href="https://www.w3.org/TR/graphics-aria-1.0/"><cite>WAI-ARIA Graphics Module</cite></a>. Amelia Bellamy-Royds; Joanmarie Diggs; Michael Cooper. W3C. 2 October 2018. W3C Recommendation. URL: <a href="https://www.w3.org/TR/graphics-aria-1.0/">https://www.w3.org/TR/graphics-aria-1.0/</a></dd><dt id="bib-wai-aria-10">[WAI-ARIA-10]</dt><dd><a href="https://www.w3.org/TR/wai-aria/"><cite>Accessible Rich Internet Applications (WAI-ARIA) 1.0</cite></a>. James Craig; Michael Cooper et al. W3C. 20 March 2014. W3C Recommendation. URL: <a href="https://www.w3.org/TR/wai-aria/">https://www.w3.org/TR/wai-aria/</a></dd>
+        <dt id="bib-aria-practices">[ARIA-PRACTICES]</dt><dd><a href="https://www.w3.org/TR/wai-aria-practices-1.1/"><cite>WAI-ARIA Authoring Practices 1.1</cite></a>. Matthew King; JaEun Ku; James Nurthen; Michiel Bijl; Michael Cooper. W3C. 7 February 2019. W3C Note. URL: <a href="https://www.w3.org/TR/wai-aria-practices-1.1/">https://www.w3.org/TR/wai-aria-practices-1.1/</a></dd><dt id="bib-graphics-aria">[GRAPHICS-ARIA]</dt><dd><a href="https://www.w3.org/TR/graphics-aria-1.0/"><cite>WAI-ARIA Graphics Module</cite></a>. Amelia Bellamy-Royds; Joanmarie Diggs; Michael Cooper. W3C. 2 October 2018. W3C Recommendation. URL: <a href="https://www.w3.org/TR/graphics-aria-1.0/">https://www.w3.org/TR/graphics-aria-1.0/</a></dd><dt id="bib-wai-aria-10">[WAI-ARIA-10]</dt><dd><a href="https://www.w3.org/TR/wai-aria/"><cite>Accessible Rich Internet Applications (WAI-ARIA) 1.0</cite></a>. James Craig; Michael Cooper et al. W3C. 20 March 2014. W3C Recommendation. URL: <a href="https://www.w3.org/TR/wai-aria/">https://www.w3.org/TR/wai-aria/</a></dd>
       </dl></section></section><p role="navigation" id="back-to-top"><a href="#title"><abbr title="Back to Top">↑</abbr></a></p><script src="https://www.w3.org/scripts/TR/2016/fixup.js"></script></body></html>
