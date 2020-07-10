@@ -32,21 +32,523 @@ var mappingTableLabels = {
   }
 }
 </script>
-<script async="" src="/cdn-cgi/bm/cv/1284585713/api.js"></script><style id="respec-mainstyle">@keyframes pop{0%{transform:scale(1,1)}25%{transform:scale(1.25,1.25);opacity:.75}100%{transform:scale(1,1)}}.hljs{background:0 0!important}a abbr,h1 abbr,h2 abbr,h3 abbr,h4 abbr,h5 abbr,h6 abbr{border:none}dfn{font-weight:700}a.internalDFN{color:inherit;border-bottom:1px solid #99c;text-decoration:none}a.externalDFN{color:inherit;border-bottom:1px dotted #ccc;text-decoration:none}a.bibref{text-decoration:none}.respec-offending-element:target{animation:pop .25s ease-in-out 0s 1}.respec-offending-element,a[href].respec-offending-element{text-decoration:red wavy underline}@supports not (text-decoration:red wavy underline){.respec-offending-element:not(pre){display:inline-block}.respec-offending-element{background:url(data:image/gif;base64,R0lGODdhBAADAPEAANv///8AAP///wAAACwAAAAABAADAEACBZQjmIAFADs=) bottom repeat-x}}#references :target{background:#eaf3ff;animation:pop .4s ease-in-out 0s 1}cite .bibref{font-style:normal}code{color:#c63501}th code{color:inherit}a[href].orcid{padding-left:4px;padding-right:4px}a[href].orcid>svg{margin-bottom:-2px}.toc a,.tof a{text-decoration:none}a .figno,a .secno{color:#000}ol.tof,ul.tof{list-style:none outside none}.caption{margin-top:.5em;font-style:italic}table.simple{border-spacing:0;border-collapse:collapse;border-bottom:3px solid #005a9c}.simple th{background:#005a9c;color:#fff;padding:3px 5px;text-align:left}.simple th a{color:#fff;padding:3px 5px;text-align:left}.simple th[scope=row]{background:inherit;color:inherit;border-top:1px solid #ddd}.simple td{padding:3px 10px;border-top:1px solid #ddd}.simple tr:nth-child(even){background:#f0f6ff}.section dd>p:first-child{margin-top:0}.section dd>p:last-child{margin-bottom:0}.section dd{margin-bottom:1em}.section dl.attrs dd,.section dl.eldef dd{margin-bottom:0}#issue-summary>ul,.respec-dfn-list{column-count:2}#issue-summary li,.respec-dfn-list li{list-style:none}details.respec-tests-details{margin-left:1em;display:inline-block;vertical-align:top}details.respec-tests-details>*{padding-right:2em}details.respec-tests-details[open]{z-index:999999;position:absolute;border:thin solid #cad3e2;border-radius:.3em;background-color:#fff;padding-bottom:.5em}details.respec-tests-details[open]>summary{border-bottom:thin solid #cad3e2;padding-left:1em;margin-bottom:1em;line-height:2em}details.respec-tests-details>ul{width:100%;margin-top:-.3em}details.respec-tests-details>li{padding-left:1em}a[href].self-link:hover{opacity:1;text-decoration:none;background-color:transparent}h2,h3,h4,h5,h6{position:relative}aside.example .marker>a.self-link{color:inherit}h2>a.self-link,h3>a.self-link,h4>a.self-link,h5>a.self-link,h6>a.self-link{border:none;color:inherit;font-size:83%;height:2em;left:-1.6em;opacity:.5;position:absolute;text-align:center;text-decoration:none;top:0;transition:opacity .2s;width:2em}h2>a.self-link::before,h3>a.self-link::before,h4>a.self-link::before,h5>a.self-link::before,h6>a.self-link::before{content:"§";display:block}@media (max-width:767px){dd{margin-left:0}h2>a.self-link,h3>a.self-link,h4>a.self-link,h5>a.self-link,h6>a.self-link{left:auto;top:auto}}@media print{.removeOnSave{display:none}}</style><meta name="description" content="SVG Accessibility API Mappings (SVG-AAM) defines how
+<script async="" src="/cdn-cgi/bm/cv/2172558837/api.js"></script><style id="respec-mainstyle">@keyframes pop{0%{transform:scale(1,1)}25%{transform:scale(1.25,1.25);opacity:.75}100%{transform:scale(1,1)}}.hljs{background:0 0!important}a abbr,h1 abbr,h2 abbr,h3 abbr,h4 abbr,h5 abbr,h6 abbr{border:none}dfn{font-weight:700}a.internalDFN{color:inherit;border-bottom:1px solid #99c;text-decoration:none}a.externalDFN{color:inherit;border-bottom:1px dotted #ccc;text-decoration:none}a.bibref{text-decoration:none}.respec-offending-element:target{animation:pop .25s ease-in-out 0s 1}.respec-offending-element,a[href].respec-offending-element{text-decoration:red wavy underline}@supports not (text-decoration:red wavy underline){.respec-offending-element:not(pre){display:inline-block}.respec-offending-element{background:url(data:image/gif;base64,R0lGODdhBAADAPEAANv///8AAP///wAAACwAAAAABAADAEACBZQjmIAFADs=) bottom repeat-x}}#references :target{background:#eaf3ff;animation:pop .4s ease-in-out 0s 1}cite .bibref{font-style:normal}code{color:#c63501}th code{color:inherit}a[href].orcid{padding-left:4px;padding-right:4px}a[href].orcid>svg{margin-bottom:-2px}.toc a,.tof a{text-decoration:none}a .figno,a .secno{color:#000}ol.tof,ul.tof{list-style:none outside none}.caption{margin-top:.5em;font-style:italic}table.simple{border-spacing:0;border-collapse:collapse;border-bottom:3px solid #005a9c}.simple th{background:#005a9c;color:#fff;padding:3px 5px;text-align:left}.simple th a{color:#fff;padding:3px 5px;text-align:left}.simple th[scope=row]{background:inherit;color:inherit;border-top:1px solid #ddd}.simple td{padding:3px 10px;border-top:1px solid #ddd}.simple tr:nth-child(even){background:#f0f6ff}.section dd>p:first-child{margin-top:0}.section dd>p:last-child{margin-bottom:0}.section dd{margin-bottom:1em}.section dl.attrs dd,.section dl.eldef dd{margin-bottom:0}#issue-summary>ul,.respec-dfn-list{column-count:2}#issue-summary li,.respec-dfn-list li{list-style:none}details.respec-tests-details{margin-left:1em;display:inline-block;vertical-align:top}details.respec-tests-details>*{padding-right:2em}details.respec-tests-details[open]{z-index:999999;position:absolute;border:thin solid #cad3e2;border-radius:.3em;background-color:#fff;padding-bottom:.5em}details.respec-tests-details[open]>summary{border-bottom:thin solid #cad3e2;padding-left:1em;margin-bottom:1em;line-height:2em}details.respec-tests-details>ul{width:100%;margin-top:-.3em}details.respec-tests-details>li{padding-left:1em}a[href].self-link:hover{opacity:1;text-decoration:none;background-color:transparent}h2,h3,h4,h5,h6{position:relative}aside.example .marker>a.self-link{color:inherit}h2>a.self-link,h3>a.self-link,h4>a.self-link,h5>a.self-link,h6>a.self-link{border:none;color:inherit;font-size:83%;height:2em;left:-1.6em;opacity:.5;position:absolute;text-align:center;text-decoration:none;top:0;transition:opacity .2s;width:2em}h2>a.self-link::before,h3>a.self-link::before,h4>a.self-link::before,h5>a.self-link::before,h6>a.self-link::before{content:"§";display:block}@media (max-width:767px){dd{margin-left:0}h2>a.self-link,h3>a.self-link,h4>a.self-link,h5>a.self-link,h6>a.self-link{left:auto;top:auto}}@media print{.removeOnSave{display:none}}</style><meta name="description" content="SVG Accessibility API Mappings (SVG-AAM) defines how
     user agents map
     Scalable Vector Graphics (SVG) [SVG2] markup
     to platform accessibility
     application programming interfaces (APIs).
     It is intended for SVG user agent developers
-    responsible for SVG accessibility in their user agent."><link rel="canonical" href="https://www.w3.org/TR/svg-aam-1.0/"><style>var{position:relative;cursor:pointer}var[data-type]::after,var[data-type]::before{position:absolute;left:50%;top:-6px;opacity:0;transition:opacity .4s;pointer-events:none}var[data-type]::before{content:"";transform:translateX(-50%);border-width:4px 6px 0 6px;border-style:solid;border-color:transparent;border-top-color:#000}var[data-type]::after{content:attr(data-type);transform:translateX(-50%) translateY(-100%);background:#000;text-align:center;font-family:"Dank Mono","Fira Code",monospace;font-style:normal;padding:6px;border-radius:3px;color:#daca88;text-indent:0;font-weight:400}var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}</style><script id="initialUserConfig" type="application/json">{
-  "includePermalinks": true,
+    responsible for SVG accessibility in their user agent."><link rel="canonical" href="https://www.w3.org/TR/svg-aam-1.0/"><script type="application/ld+json">{
+  "@context": [
+    "http://schema.org",
+    {
+      "@vocab": "http://schema.org/",
+      "@language": "en-US",
+      "w3p": "http://www.w3.org/2001/02pd/rec54#",
+      "foaf": "http://xmlns.com/foaf/0.1/",
+      "datePublished": {
+        "@type": "http://www.w3.org/2001/XMLSchema#date"
+      },
+      "inLanguage": {
+        "@language": null
+      },
+      "isBasedOn": {
+        "@type": "@id"
+      },
+      "license": {
+        "@type": "@id"
+      }
+    }
+  ],
+  "id": "https://www.w3.org/TR/svg-aam-1.0/",
+  "type": [
+    "TechArticle"
+  ],
+  "name": "SVG Accessibility API Mappings",
+  "inLanguage": "en-US",
+  "license": "https://www.w3.org/Consortium/Legal/2015/copyright-software-and-document",
+  "datePublished": "2020-07-10",
+  "copyrightHolder": {
+    "name": "World Wide Web Consortium",
+    "url": "https://www.w3.org/"
+  },
+  "discussionUrl": "https://github.com/w3c/svg-aam/issues/",
+  "alternativeHeadline": "",
+  "isBasedOn": "https://www.w3.org/TR/2016/WD-svg-aam-1.0-20160908/",
+  "description": "SVG Accessibility API Mappings (SVG-AAM) defines how\n    user agents map\n    Scalable Vector Graphics (SVG) [SVG2] markup\n    to platform accessibility\n    application programming interfaces (APIs).\n    It is intended for SVG user agent developers\n    responsible for SVG accessibility in their user agent.",
+  "editor": [
+    {
+      "type": "Person",
+      "name": "Amelia Bellamy-Royds",
+      "foaf:mbox": "amelia.bellamy.royds@gmail.com",
+      "worksFor": {
+        "name": "Invited Expert"
+      }
+    },
+    {
+      "type": "Person",
+      "name": "Ian Pouncey",
+      "foaf:mbox": "w3c@ipouncey.co.uk",
+      "worksFor": {
+        "name": "The Paciello Group, LLC"
+      }
+    }
+  ],
+  "contributor": [
+    {
+      "type": "Person",
+      "name": "Amelia Bellamy-Royds",
+      "foaf:mbox": "amelia.bellamy.royds@gmail.com",
+      "worksFor": {
+        "name": "Invited Expert"
+      }
+    },
+    {
+      "type": "Person",
+      "name": "Ian Pouncey",
+      "foaf:mbox": "w3c@ipouncey.co.uk",
+      "worksFor": {
+        "name": "The Paciello Group, LLC"
+      }
+    },
+    {
+      "type": "Person",
+      "name": "Richard Schwerdtfeger",
+      "foaf:mbox": "richschwer@gmail.com",
+      "worksFor": {
+        "name": "Knowbility"
+      }
+    },
+    {
+      "type": "Person",
+      "name": "Doug Schepers",
+      "foaf:mbox": "schepers@w3.org",
+      "worksFor": {
+        "name": "W3C"
+      }
+    }
+  ],
+  "citation": [
+    {
+      "id": "https://www.w3.org/TR/SVG2/",
+      "type": "TechArticle",
+      "name": "Scalable Vector Graphics (SVG) 2",
+      "url": "https://www.w3.org/TR/SVG2/",
+      "creator": [
+        {
+          "name": "Amelia Bellamy-Royds"
+        },
+        {
+          "name": "Bogdan Brinza"
+        },
+        {
+          "name": "Chris Lilley"
+        },
+        {
+          "name": "Dirk Schulze"
+        },
+        {
+          "name": "David Storey"
+        },
+        {
+          "name": "Eric Willigers"
+        }
+      ],
+      "publisher": {
+        "name": "W3C"
+      }
+    },
+    {
+      "id": "https://www.w3.org/TR/core-aam-1.1/",
+      "type": "TechArticle",
+      "name": "Core Accessibility API Mappings 1.1",
+      "url": "https://www.w3.org/TR/core-aam-1.1/",
+      "creator": [
+        {
+          "name": "Joanmarie Diggs"
+        },
+        {
+          "name": "Joseph Scheuhammer"
+        },
+        {
+          "name": "Richard Schwerdtfeger"
+        },
+        {
+          "name": "Michael Cooper"
+        },
+        {
+          "name": "Andi Snow-Weaver"
+        },
+        {
+          "name": "Aaron Leventhal"
+        }
+      ],
+      "publisher": {
+        "name": "W3C"
+      }
+    },
+    {
+      "id": "https://www.w3.org/TR/accname-1.1/",
+      "type": "TechArticle",
+      "name": "Accessible Name and Description Computation 1.1",
+      "url": "https://www.w3.org/TR/accname-1.1/",
+      "creator": [
+        {
+          "name": "Joanmarie Diggs"
+        },
+        {
+          "name": "Bryan Garaventa"
+        },
+        {
+          "name": "Michael Cooper"
+        }
+      ],
+      "publisher": {
+        "name": "W3C"
+      }
+    },
+    {
+      "id": "https://www.w3.org/TR/wai-aria-1.1/",
+      "type": "TechArticle",
+      "name": "Accessible Rich Internet Applications (WAI-ARIA) 1.1",
+      "url": "https://www.w3.org/TR/wai-aria-1.1/",
+      "creator": [
+        {
+          "name": "Joanmarie Diggs"
+        },
+        {
+          "name": "Shane McCarron"
+        },
+        {
+          "name": "Michael Cooper"
+        },
+        {
+          "name": "Richard Schwerdtfeger"
+        },
+        {
+          "name": "James Craig"
+        }
+      ],
+      "publisher": {
+        "name": "W3C"
+      }
+    },
+    {
+      "id": "https://www.w3.org/TR/graphics-aam-1.0/",
+      "type": "TechArticle",
+      "name": "Graphics Accessibility API Mappings",
+      "url": "https://www.w3.org/TR/graphics-aam-1.0/",
+      "creator": [
+        {
+          "name": "Amelia Bellamy-Royds"
+        },
+        {
+          "name": "Joanmarie Diggs"
+        },
+        {
+          "name": "Michael Cooper"
+        }
+      ],
+      "publisher": {
+        "name": "W3C"
+      }
+    },
+    {
+      "id": "https://www.w3.org/TR/html-aam-1.0/",
+      "type": "TechArticle",
+      "name": "HTML Accessibility API Mappings 1.0",
+      "url": "https://www.w3.org/TR/html-aam-1.0/",
+      "creator": [
+        {
+          "name": "Steve Faulkner"
+        },
+        {
+          "name": "Alexander Surkov"
+        },
+        {
+          "name": "Scott O'Hara"
+        },
+        {
+          "name": "Bogdan Brinza"
+        },
+        {
+          "name": "Jason Kiss"
+        },
+        {
+          "name": "Cynthia Shelly"
+        }
+      ],
+      "publisher": {
+        "name": "W3C"
+      }
+    },
+    {
+      "id": "https://dom.spec.whatwg.org/",
+      "type": "TechArticle",
+      "name": "DOM Standard",
+      "url": "https://dom.spec.whatwg.org/",
+      "creator": [
+        {
+          "name": "Anne van Kesteren"
+        }
+      ],
+      "publisher": {
+        "name": "WHATWG"
+      }
+    },
+    {
+      "id": "https://www.w3.org/TR/SVG/",
+      "type": "TechArticle",
+      "name": "Scalable Vector Graphics (SVG) 1.0 Specification",
+      "url": "https://www.w3.org/TR/SVG/",
+      "creator": [
+        {
+          "name": "Jon Ferraiolo"
+        }
+      ],
+      "publisher": {
+        "name": "W3C"
+      }
+    },
+    {
+      "id": "https://www.w3.org/TR/SVG11/",
+      "type": "TechArticle",
+      "name": "Scalable Vector Graphics (SVG) 1.1 (Second Edition)",
+      "url": "https://www.w3.org/TR/SVG11/",
+      "creator": [
+        {
+          "name": "Erik Dahlström"
+        },
+        {
+          "name": "Patrick Dengler"
+        },
+        {
+          "name": "Anthony Grasso"
+        },
+        {
+          "name": "Chris Lilley"
+        },
+        {
+          "name": "Cameron McCormack"
+        },
+        {
+          "name": "Doug Schepers"
+        },
+        {
+          "name": "Jonathan Watt"
+        },
+        {
+          "name": "Jon Ferraiolo"
+        },
+        {
+          "name": "Jun Fujisawa"
+        },
+        {
+          "name": "Dean Jackson"
+        }
+      ],
+      "publisher": {
+        "name": "W3C"
+      }
+    },
+    {
+      "id": "https://www.w3.org/TR/wai-aria/",
+      "type": "TechArticle",
+      "name": "Accessible Rich Internet Applications (WAI-ARIA) 1.0",
+      "url": "https://www.w3.org/TR/wai-aria/",
+      "creator": [
+        {
+          "name": "James Craig"
+        },
+        {
+          "name": "Michael Cooper"
+        }
+      ],
+      "publisher": {
+        "name": "W3C"
+      }
+    },
+    {
+      "id": "https://www.w3.org/TR/graphics-aria-1.0/",
+      "type": "TechArticle",
+      "name": "WAI-ARIA Graphics Module",
+      "url": "https://www.w3.org/TR/graphics-aria-1.0/",
+      "creator": [
+        {
+          "name": "Amelia Bellamy-Royds"
+        },
+        {
+          "name": "Joanmarie Diggs"
+        },
+        {
+          "name": "Michael Cooper"
+        }
+      ],
+      "publisher": {
+        "name": "W3C"
+      }
+    },
+    {
+      "id": "https://www.w3.org/TR/wai-aria-practices-1.1/",
+      "type": "TechArticle",
+      "name": "WAI-ARIA Authoring Practices 1.1",
+      "url": "https://www.w3.org/TR/wai-aria-practices-1.1/",
+      "creator": [
+        {
+          "name": "Matthew King"
+        },
+        {
+          "name": "JaEun Ku"
+        },
+        {
+          "name": "James Nurthen"
+        },
+        {
+          "name": "Zoë Bijl"
+        },
+        {
+          "name": "Michael Cooper"
+        },
+        {
+          "name": "Joseph Scheuhammer"
+        },
+        {
+          "name": "Lisa Pappas"
+        },
+        {
+          "name": "Richard Schwerdtfeger"
+        }
+      ],
+      "publisher": {
+        "name": "W3C"
+      }
+    },
+    {
+      "id": "https://docs.microsoft.com/en-us/windows/win32/winauto/microsoft-active-accessibility",
+      "type": "TechArticle",
+      "name": "Microsoft Active Accessibility (MSAA)",
+      "url": "https://docs.microsoft.com/en-us/windows/win32/winauto/microsoft-active-accessibility",
+      "publisher": {
+        "name": "Microsoft Corporation"
+      }
+    },
+    {
+      "id": "https://www.linuxfoundation.org/collaborate/workgroups/accessibility/iaccessible2",
+      "type": "TechArticle",
+      "name": "IAccessible2",
+      "url": "https://www.linuxfoundation.org/collaborate/workgroups/accessibility/iaccessible2",
+      "publisher": {
+        "name": "Linux Foundation"
+      }
+    },
+    {
+      "id": "https://docs.microsoft.com/en-us/windows/win32/winauto/ui-automation-specification",
+      "type": "TechArticle",
+      "name": "UI Automation",
+      "url": "https://docs.microsoft.com/en-us/windows/win32/winauto/ui-automation-specification",
+      "publisher": {
+        "name": "Microsoft Corporation"
+      }
+    },
+    {
+      "id": "https://developer.gnome.org/atk/stable/",
+      "type": "TechArticle",
+      "name": "ATK - Accessibility Toolkit",
+      "url": "https://developer.gnome.org/atk/stable/",
+      "publisher": {
+        "name": "The GNOME Project"
+      }
+    },
+    {
+      "id": "https://developer.gnome.org/libatspi/stable/",
+      "type": "TechArticle",
+      "name": "Assistive Technology Service Provider Interface",
+      "url": "https://developer.gnome.org/libatspi/stable/",
+      "publisher": {
+        "name": "The GNOME Project"
+      }
+    },
+    {
+      "id": "https://developer.apple.com/documentation/appkit/nsaccessibility",
+      "type": "TechArticle",
+      "name": "The NSAccessibility Protocol for macOS",
+      "url": "https://developer.apple.com/documentation/appkit/nsaccessibility",
+      "publisher": {
+        "name": "Apple, Inc."
+      }
+    },
+    {
+      "id": "https://tools.ietf.org/html/rfc2119",
+      "type": "TechArticle",
+      "name": "Key words for use in RFCs to Indicate Requirement Levels",
+      "url": "https://tools.ietf.org/html/rfc2119",
+      "creator": [
+        {
+          "name": "S. Bradner"
+        }
+      ],
+      "publisher": {
+        "name": "IETF"
+      }
+    },
+    {
+      "id": "https://docs.microsoft.com/en-us/windows/win32/winauto/iaccessibleex",
+      "type": "TechArticle",
+      "name": "The IAccessibleEx Interface",
+      "url": "https://docs.microsoft.com/en-us/windows/win32/winauto/iaccessibleex",
+      "publisher": {
+        "name": "Microsoft Corporation"
+      }
+    },
+    {
+      "id": "https://www.w3.org/TR/WCAG21/",
+      "type": "TechArticle",
+      "name": "Web Content Accessibility Guidelines (WCAG) 2.1",
+      "url": "https://www.w3.org/TR/WCAG21/",
+      "creator": [
+        {
+          "name": "Andrew Kirkpatrick"
+        },
+        {
+          "name": "Joshue O Connor"
+        },
+        {
+          "name": "Alastair Campbell"
+        },
+        {
+          "name": "Michael Cooper"
+        }
+      ],
+      "publisher": {
+        "name": "W3C"
+      }
+    },
+    {
+      "id": "https://www.w3.org/TR/css-cascade-3/",
+      "type": "TechArticle",
+      "name": "CSS Cascading and Inheritance Level 3",
+      "url": "https://www.w3.org/TR/css-cascade-3/",
+      "creator": [
+        {
+          "name": "Elika Etemad"
+        },
+        {
+          "name": "Tab Atkins Jr."
+        }
+      ],
+      "publisher": {
+        "name": "W3C"
+      }
+    }
+  ]
+}</script><style>var{position:relative;cursor:pointer}var[data-type]::after,var[data-type]::before{position:absolute;left:50%;top:-6px;opacity:0;transition:opacity .4s;pointer-events:none}var[data-type]::before{content:"";transform:translateX(-50%);border-width:4px 6px 0 6px;border-style:solid;border-color:transparent;border-top-color:#000}var[data-type]::after{content:attr(data-type);transform:translateX(-50%) translateY(-100%);background:#000;text-align:center;font-family:"Dank Mono","Fira Code",monospace;font-style:normal;padding:6px;border-radius:3px;color:#daca88;text-indent:0;font-weight:400}var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}</style><script id="initialUserConfig" type="application/json">{
+  "doJsonLd": true,
   "specStatus": "ED",
-  "diffTool": "http://www.aptest.com/standards/htmldiff/htmldiff.pl",
   "shortName": "svg-aam-1.0",
   "copyrightStart": "2015",
   "previousPublishDate": "2016-09-08",
   "previousMaturity": "WD",
-  "github": "https://github.com/w3c/svg-aam",
+  "github": "w3c/svg-aam",
   "editors": [
     {
       "name": "Amelia Bellamy-Royds",
@@ -136,16 +638,16 @@ var mappingTableLabels = {
   "preProcess": [
     null
   ],
-  "publishDate": "2020-06-10",
-  "publishISODate": "2020-06-10T00:00:00.000Z",
-  "generatedSubtitle": "Editor's Draft 10 June 2020"
+  "publishDate": "2020-07-10",
+  "publishISODate": "2020-07-10T00:00:00.000Z",
+  "generatedSubtitle": "Editor's Draft 10 July 2020"
 }</script><link rel="stylesheet" href="https://www.w3.org/StyleSheets/TR/2016/W3C-ED"></head>
 <body class="h-entry informative"><div class="head">
     <a class="logo" href="https://www.w3.org/"><img alt="W3C" width="72" height="48" src="https://www.w3.org/StyleSheets/TR/2016/logos/W3C"></a> <h1 id="title" class="title">SVG Accessibility API Mappings</h1>
     
     <h2>
       W3C Editor's Draft
-      <time class="dt-published" datetime="2020-06-10">10 June 2020</time>
+      <time class="dt-published" datetime="2020-07-10">10 July 2020</time>
     </h2>
     <dl>
       <dt>This version:</dt><dd>
@@ -2716,27 +3218,19 @@ var mappingTableLabels = {
         <li>Jason White (Educational Testing Service)</li>
       </ul>
     </section>
-    <section class="section" id="ack_funders">
-      <h4 id="a-1-2-enabling-funders"><bdi class="secno">A.1.2 </bdi>Enabling funders<a class="self-link" aria-label="§" href="#ack_funders"></a></h4>
-      <p>
-        This publication has been funded in part with
-        Federal funds from the U.S. Department of Education,
-        National Institute on Disability, Independent Living, and Rehabilitation Research (NIDILRR)
-        under contract number ED-OSE-10-C-0067.
-        The content of this publication does not necessarily reflect
-        the views or policies of the U.S. Department of Education,
-        nor does mention of trade names, commercial products, or organizations
-        imply endorsement by the U.S. Government.
-      </p>
-    </section>
-  </section>
+		<section class="section" id="ack_funders">
+	<h4 id="a-1-2-enabling-funders"><bdi class="secno">A.1.2 </bdi>Enabling funders<a class="self-link" aria-label="§" href="#ack_funders"></a></h4>
+	<p>This publication has been funded in part with U.S. Federal funds from the Department of Education, National Institute on Disability, Independent Living, and Rehabilitation Research (NIDILRR), initially under contract number ED-OSE-10-C-0067 and currently under contract number HHSP23301500054C. The content of this publication does not necessarily reflect the views or policies of the U.S. Department of Education, nor does mention of trade names, commercial products, or organizations imply endorsement by the U.S. Government.</p>
+</section>
+
+	</section>
 
   <section class="appendix" id="issue-summary"><h3 id="a-2-issue-summary"><bdi class="secno">A.2 </bdi>Issue Summary<a class="self-link" aria-label="§" href="#issue-summary"></a></h3>
     
   <ul><li><a href="#issue-container-number-6">Issue 6</a><span style="text-transform: none">: Should structured descriptions be exposed in the accessibility tree?</span></li><li><a href="#textpath-tspan-mappings-issue">Issue 2</a><span style="text-transform: none">: textPath and tspan need platform-specific mappings</span></li><li><a href="#issue-container-number-7">Issue 7</a><span style="text-transform: none">: Harmonize use-element behavior with other shadow DOM behavior</span></li><li><a href="#issue-container-number-8">Issue 8</a><span style="text-transform: none">: Exposing SVG view behavior and viewTarget to accessibility APIs</span></li></ul></section>
 
 </section>
-<script type="text/javascript">(function(){window['__CF$cv$params']={r:'5a16bf0aea6ff051',m:'98655bd920a5812669ccc41c8548c2b5f570c510-1591830422-1800-AagnWkTz+IZy2XhhmQCrGlim+iV+VSqIMysoYSJoB4EaP9S5qO4RA/uoBXyYxDtRyRvqYOcSQHnJBdlMu0w/saoDDQ5RodeJ16zFO6bXrvWBEAjuEDFBXf29zsWqIpFAj38c7mskW+eE7sPHYUAPlA9J7696y29kuX1AwqU8r6EZxv7c9o1wPZBxjddhgXi0VQ==',s:[0xdc18430849,0x6c31072973],}})();</script>
+<script type="text/javascript">(function(){window['__CF$cv$params']={r:'5b0cd55d781fe748',m:'ba197e2ac09d24c95faa55bab070f063f135a182-1594410833-1800-Aef88dD8Zm5ysv6vn5Dx150bBUBWh2x1X8ltxk27Uzii4Ga0c1R4OZyoIICox6xzuUVYpYOKF/L+PrNHz6bT/3JTOy0kmL1Ax7xh4qbjZyzZdXHCiPqnK8odmy9UCs7TCwObPFPA1UXooZqFA9UavzVBvN3Kuk6uXbeDjmII6KIj4WthsVOdXdmZ4G55ftD1cA==',s:[0x2d0011f590,0x9fc0e2444b],}})();</script>
 
 <section id="references" class="appendix"><h2 id="b-references"><bdi class="secno">B. </bdi>References<a class="self-link" aria-label="§" href="#references"></a></h2><section id="normative-references">
       <h3 id="b-1-normative-references"><bdi class="secno">B.1 </bdi>
