@@ -3,10 +3,10 @@
 <head>
 <title>SVG Accessibility API Mappings</title>
 <script src="https://www.w3.org/scripts/jquery/1.11/jquery.min.js"></script>
-<script src="https://www.w3.org/Tools/respec/respec-w3c-common" class="remove" defer="defer"></script>
+<script src="https://www.w3.org/Tools/respec/respec-w3c" class="remove" defer="defer"></script>
 <script src="common/script/resolveReferences.js" class="remove"></script>
-	<script src="common/biblio.js" class="remove" defer="defer"></script>
-
+<script src="common/biblio.js" class="remove" defer="defer"></script>
+<script src="common/script/mapping-tables.js"></script>
 <link href="common/css/mapping-tables.css" rel="stylesheet" type="text/css"/>
 <link href="common/css/common.css" rel="stylesheet" type="text/css"/>
 <!--<link href="css/svg-aam.css" rel="stylesheet" type="text/css"/>-->
@@ -102,15 +102,7 @@
     */
 
     // Working group info
-    wg:           ["SVG Working Group"],
-    wgURI:        ["https://www.w3.org/Graphics/SVG/WG/wiki/Main_Page"],
-
-    // URI of the patent status for this WG, for Rec-track documents
-    // !!!! IMPORTANT !!!!
-    // This is important for Rec-track documents, do not copy a patent URI from a random
-    // document unless you know what you're doing. If in doubt ask your friendly neighbourhood
-    // Team Contact.
-    wgPatentURI:  ["https://www.w3.org/2004/01/pp-impl/19480/status"],
+    group: "svg",
 
     tocIntroductory: true,
     //maxTocLevel: 4,
@@ -147,13 +139,13 @@
       "REC": "https://www.w3.org/TR/graphics-aam/"
     },
 
-
-    preProcess: [ linkCrossReferences ]
-  }
+    preProcess:[linkCrossReferences],
+		postProcess:[],
+		definitionMap:[],
+		xref: ["core-aam", "accname", "wai-aria"]  }
 </script>
 
 <script src="common/script/jquery.details.min.js"></script>
-<script src="common/script/mapping-tables.js"></script>
 <script type="text/javascript">
 
 var mappingTableLabels = {
@@ -180,7 +172,7 @@ var mappingTableLabels = {
   <p>
     SVG Accessibility API Mappings (SVG-AAM) defines how
     <a class="termref" data-lt="User Agent">user agents</a> map
-    Scalable Vector Graphics (SVG) [[!SVG2]] markup
+    Scalable Vector Graphics (SVG) [[SVG2]] markup
     to platform <a class="termref" data-lt="accessibility api">accessibility
     application programming interfaces (<abbr title="Application Programming Interfaces">APIs</abbr>)</a>.
     It is intended for SVG user agent developers
@@ -190,13 +182,13 @@ var mappingTableLabels = {
     This specification allows SVG authors to create accessible rich internet applications,
     including charts, graphs, and other drawings.
     It does this by extending the
-    <cite><a href="http://www.w3.org/TR/core-aam-1.1/">Core Accessibility API Mappings 1.1</a></cite> (CORE-AAM) [[!CORE-AAM]]
-    and the <cite><a href="http://www.w3.org/TR/accname-1.1/">Accessible Name and Description: Computation and API Mappings 1.1</a></cite> (ACCNAME-AAM) [[!ACCNAME-AAM]] specifications
+    <cite><a href="http://www.w3.org/TR/core-aam-1.1/">Core Accessibility API Mappings 1.1</a></cite> (CORE-AAM) [[CORE-AAM]]
+    and the <cite><a href="http://www.w3.org/TR/accname-1.1/">Accessible Name and Description: Computation and API Mappings 1.1</a></cite> (ACCNAME-AAM) [[ACCNAME-AAM]] specifications
     for user agents.
     It leverages those core mappings and provides SVG-specific guidance
     to define how the SVG user agent must respond to keyboard focus
     and <a class="termref" data-lt="role">role</a>, <a class="termref" data-lt="State">state</a>, and <a class="termref" data-lt="Property">property</a> attributes
-    provided in Web content via <cite><a href="http://www.w3.org/TR/wai-aria-1.1/"><abbr title="Accessible Rich Internet Applications">WAI-ARIA</abbr></a></cite> [[!WAI-ARIA]].
+    provided in Web content via <cite><a href="http://www.w3.org/TR/wai-aria-1.1/"><abbr title="Accessible Rich Internet Applications">WAI-ARIA</abbr></a></cite> [[WAI-ARIA]].
     The SVG-AAM also adapts the ACCNAME-AAM
     to make use of standard SVG features
     used to compute accessible names and description information
@@ -380,14 +372,14 @@ var mappingTableLabels = {
     <li>
       <cite><a href="http://www.w3.org/TR/core-aam-1.1/">Core Accessibility API Mappings</a></cite> specification [[CORE-AAM]],
       which expresses how <abbr title="Accessible Rich Internet Applications">WAI-ARIA</abbr>
-      <a href="#dfn-role" class="termref">roles</a>, <a href="#dfn-state" class="termref">states</a>, and <a href="#dfn-property" class="termref">properties</a>
+      <a class="termref">roles</a>, <a class="termref">states</a>, and <a class="termref">properties</a>
       should be supported in user agents
       using platform accessibility <abbr title="Application Programming Interfaces">APIs</abbr>.
     </li>
     <li>
       <cite><a href="http://www.w3.org/TR/graphics-aam-1.0/">Graphics Accessibility API Mappings</a></cite>[[GRAPHICS-AAM]], a planned <abbr title="World Wide Web Consortium">W3C</abbr> recommendation,
       which expresses how <cite><a href="http://www.w3.org/TR/graphics-aria-1.0/">WAI-ARIA Graphics Module</a></cite> [[GRAPHICS-ARIA]]
-      <a href="#dfn-role" class="termref">roles</a>, <a href="#dfn-state" class="termref">states</a>, and <a href="#dfn-property" class="termref">properties</a>
+      <a class="termref">roles</a>, <a class="termref">states</a>, and <a class="termref">properties</a>
       should be supported in user agents
       using platform accessibility <abbr title="Application Programming Interfaces">APIs</abbr>.
     </li>
@@ -444,7 +436,7 @@ var mappingTableLabels = {
     </p>
     <p>
       In Web pages the Document Object Model (DOM)
-      is used to represent the structure and <a href="#dfn-state" class="termref">state</a>
+      is used to represent the structure and <a class="termref">state</a>
       of the <a class="termref" data-lt="element">elements</a> in the document
       being rendered by a <a class="termref" data-lt="user agent">user agent</a>.
       The elements of the document are organized into a hierarchy of nodes
@@ -533,7 +525,7 @@ var mappingTableLabels = {
     </p>
   </section>
 </section>
-<section id="normative">
+<section id="conformance">
 	<h2>Normative User Agent Implementation Requirements for <abbr title="Scalable Vector Graphics">SVG</abbr></h2>
 	<p>
     This specification marks certain sections
@@ -573,10 +565,6 @@ var mappingTableLabels = {
     but it is not required to follow such recommendations
     in order to conform to this specification.
   </p>
-</section>
-<section id="glossary">
-  <h2>Important Terms</h2>
-  <div data-include="common/terms.html" data-oninclude="restrictReferences" data-include-replace='true'>Placeholder for glossary</div>
 </section>
 <section class="section" id="keyboard-focus">
 	<h2>Supporting Keyboard Navigation</h2>
@@ -634,7 +622,7 @@ var mappingTableLabels = {
       <h4>Excluding Elements from the Accessibility Tree</h4>
       <p>
         Certain elements in the <abbr title="Document Object Model">DOM</abbr>
-        are not exposed via the <a class="termref" href="#dfn-accessibility-api">accessibility <abbr title="Application Programming Interface">API</abbr></a>.
+        are not exposed via the <a class="termref">accessibility <abbr title="Application Programming Interface">API</abbr></a>.
         The section <a class="core-mapping" href="#exclude_elements2">Excluding Elements from the Accessibility Tree</a>
         of the Core Accessibility API Mappings [[CORE-AAM]]
         outlines the general rules for excluding elements.
@@ -1109,7 +1097,7 @@ var mappingTableLabels = {
       Elements for which no accessible object is created and no role may be applied,
       as defined in
       the <a href="#mapping_role_table">SVG Element Mapping Table</a>,
-      have no implicit role <a>semantics</a>.
+      have no implicit role <a class="termref">semantics</a>.
       The <span class="attr-name">‘<a class="property-reference" href="#aria-roledescription"><span>aria-roledescription</span></a>’</span> attribute
       MUST NOT be exposed on these elements.
       All other SVG elements have implicit role semantics
@@ -1129,10 +1117,10 @@ var mappingTableLabels = {
 	<section id="mapping_role">
 		<h2>Role mapping</h2>
 		<p>
-      Platform <a class="termref" href="#dfn-accessibility-api">accessibility <abbr title="Application Programming Interfaces">APIs</abbr></a>
+      Platform <a class="termref">accessibility <abbr title="Application Programming Interfaces">APIs</abbr></a>
       traditionally have had a finite set of
-      predefined <a href="#dfn-role" class="termref">roles</a> that are expected
-      by <a class="termref" href="#dfn-assistive-technologies">assistive technologies</a>
+      predefined <a class="termref">roles</a> that are expected
+      by <a class="termref">assistive technologies</a>
       on that platform and only one or two roles may be exposed.
     </p>
     <p>
@@ -2262,7 +2250,7 @@ var mappingTableLabels = {
         on the parent <code>svg</code> element (for a <code>view</code> element)
         or the root element (for an SVG view specification fragment).
         User agents <span class="rfc2119">SHOULD</span> therefore
-        modify the <a>accessible object</a> representing that <code>svg</code>
+        modify the <a class="termref">accessible object</a> representing that <code>svg</code>
         when a view is in effect.
       </p>
       <p>
@@ -2395,10 +2383,10 @@ var mappingTableLabels = {
   <section id="mapping_events">
 		<h2>Events</h2>
     <p>
-      <a href="#dfn-user-agent" class="termref">User agents</a> fire
-      <a href="#dfn-event" class="termref">events</a> for user actions,
+      <a class="termref">User agents</a> fire
+      <a class="termref">events</a> for user actions,
       <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr>
-      <a href="#dfn-state" class="termref">state</a> changes,
+      <a class="termref">state</a> changes,
       changes to document content or node visibility,
       changes in selection, and operation of menus.
       Conforming user agents <span class="rfc2119">MUST</span> support the
