@@ -1,0 +1,25 @@
+Copiar<!-- Ojos manga -->
+<!-- Ojo izquierdo -->
+<g transform="translate(-60,0)">
+  <ellipse cx="290" cy="200" rx="62" ry="84" fill="#000000" />
+  <ellipse cx="270" cy="190" rx="24" ry="30" fill="#FFFFFF" />
+  <circle cx="282" cy="175" r="8" fill="#FFFFFF" />
+</g>
+<!-- Ojo derecho -->
+<g transform="translate(60,0)">
+  <ellipse cx="310" cy="200" rx="62" ry="84" fill="#000000" />
+  <ellipse cx="330" cy="190" rx="24" ry="30" fill="#FFFFFF" />
+  <circle cx="318" cy="175" r="8" fill="#FFFFFF" />
+</g>
+
+<!-- Detalle speed lines (estilo manga) -->
+<path d="M150 120 C130 80, 120 60, 150 40" stroke="#000000" stroke-width="8" fill="none" stroke-linecap="round" opacity="0.9" />
+<path d="M450 120 C470 80, 480 60, 450 40" stroke="#000000" stroke-width="8" fill="none" stroke-linecap="round" opacity="0.9" />
+
+<!-- Silueta montaña abajo -->
+<g transform="translate(0,80)">
+  <path d="M140 360 L240 240 L300 300 L380 220 L460 360 Z" fill="#000000" />
+  <!-- pequeño detalle de nieve (en rojo/acento aquí para tocar localidad) -->
+  <path d="M240 240 L260 260 L240 270 Z" fill="#E63946" opacity="0.95" />
+</g>
+  
