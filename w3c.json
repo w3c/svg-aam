@@ -1,10 +1,8 @@
 {
-  "group": 83726,
+  "group": ["wg/svg", "wg/aria"],
   "contacts": [
-    {
-      "github": "michael-n-cooper",
-      "w3c": "cooper"
-    }
+    "daniel-montalvo", "svgeesus"
   ],
-  "policy": "restricted" 
+  "policy": "restricted",
+  "repo-type": "rec-track"
 }
